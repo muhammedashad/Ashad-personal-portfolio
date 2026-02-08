@@ -1,0 +1,60 @@
+/* Custom Cursor */
+.cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    /* Cool inversion effect */
+}
+
+.cursor-outline {
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--primary-color);
+    background: rgba(0, 243, 255, 0.05);
+    /* Slight fill */
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.4), inset 0 0 10px rgba(0, 243, 255, 0.1);
+    backdrop-filter: blur(1px);
+    /* Slight blur behind */
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 0.1s, background-color 0.2s, border-color 0.2s, width 0.2s, height 0.2s;
+}
+
+body:hover .cursor-dot,
+body:hover .cursor-outline {
+    opacity: 1;
+}
+
+/* Hover State - Links/Buttons */
+body.hovering .cursor-dot {
+    opacity: 0;
+    /* Hide dot on hover */
+}
+
+body.hovering .cursor-outline {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 243, 255, 0.2);
+    border-color: transparent;
+    box-shadow: 0 0 40px var(--primary-color);
+    mix-blend-mode: normal;
+    /* Reset blend mode for clear glow */
+}
+
+/* Active State (Clicking) */
+body.clicking .cursor-outline {
+    width: 25px;
+    height: 25px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 50px var(--secondary-color);
+}

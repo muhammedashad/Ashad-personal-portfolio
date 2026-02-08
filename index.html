@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashad | Multimedia Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cursor.css">
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <nav>
+        <div class="logo">ASHAD</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2>Multimedia Artist</h2>
+                <h1 class="glitch" data-text="ASHAD">ASHAD</h1>
+                <p>Graphic Design | Video Editing | UI/UX | Automation <br> Crafting immersive digital experiences.</p>
+                <a href="#portfolio" class="cta-btn">View My Work</a>
+            </div>
+            <div class="hero-image-container">
+                <!-- User should place the image here -->
+                <img src="./assets/robot.png" alt="Ashad Cyber" class="hero-character" id="hero-char">
+            </div>
+        </div>
+        <div class="hero-bg-overlay"></div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="profile-placeholder"></div>
+                <div class="about-text">
+                    <h3>Creative Visionary</h3>
+                    <p>My name is Ashad. I'm a multimedia artist specializing in graphic design, video editing, digital
+                        marketing, UI/UX, and digital automation.</p>
+                    <p>I am currently pursuing a BSc in Visual Communication. I blend creativity with technology to
+                        craft immersive digital experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon">🎨</div>
+                    <h3>Graphic Design</h3>
+                    <p>Branding, Illustrations, layout design.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">🎬</div>
+                    <h3>Video Editing</h3>
+                    <p>Post-production, motion graphics, VFX.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">💻</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Web & Mobile interfaces, prototyping.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">🤖</div>
+                    <h3>Automation</h3>
+                    <p>Workflow optimization, digital tools.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">📈</div>
+                    <h3>Digital Marketing</h3>
+                    <p>SEO, Social Media Strategy, Ads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Placeholders for now -->
+                <div class="portfolio-item">
+                    <div class="placeholder-img">Project 1</div>
+                    <div class="overlay">
+                        <h3>Project Name</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="placeholder-img">Project 2</div>
+                    <div class="overlay">
+                        <h3>Project Name</h3>
+                        <p>Video Edit</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="placeholder-img">Project 3</div>
+                    <div class="overlay">
+                        <h3>Project Name</h3>
+                        <p>UI Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p>Have a project in mind? Let's work together.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ashad. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+Antigravity/
+__pycache__/
+*.log
+.DS_Store
+node_modules/
+dist/
+.vscode/

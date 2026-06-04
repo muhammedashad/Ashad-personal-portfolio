@@ -142,15 +142,15 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* Split layout */
     z-index: 10;
 }
 
 .hero-content {
     flex: 1;
     text-align: left;
-    /* Align text to left */
-    transform-style: preserve-3d;
     padding-right: 50px;
+    transform-style: preserve-3d;
 }
 
 .hero-content h1 {
@@ -185,7 +185,7 @@ h3 {
     padding-left: 20px;
 }
 
-/* Hero Character Image */
+/* Cyber Hero Character */
 .hero-image-container {
     flex: 1;
     display: flex;
@@ -195,24 +195,79 @@ h3 {
     perspective: 1000px;
 }
 
+.cyber-character {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    animation: cyberFloat 6s ease-in-out infinite;
+    cursor: crosshair;
+    /* Bottom fade applies to both face + canvas */
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+/* Face layer — always visible underneath */
+.layer-face {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 0 40px rgba(0, 243, 255, 0.4));
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Canvas sits on top — shows helmet, is erased by mouse */
+.reveal-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    /* Mouse events handled on parent */
+    border-radius: 0;
+    mix-blend-mode: normal;
+}
+
+/* Glowing Aura Behind */
 .hero-image-container::before {
     content: '';
     position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(0, 243, 255, 0.2) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(188, 19, 254, 0.15) 0%, transparent 70%);
     z-index: -1;
-    animation: pulseGlow 5s infinite ease-in-out;
+    animation: pulseAura 4s infinite alternate;
 }
 
-.hero-character {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    filter: drop-shadow(0 0 20px rgba(188, 19, 254, 0.3));
-    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-    transition: transform 0.2s ease-out;
+@keyframes cyberFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes pulseAura {
+    0% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.8;
+    }
 }
 
 @keyframes pulseGlow {

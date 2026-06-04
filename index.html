@@ -41,14 +41,19 @@
     <section id="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h2>Multimedia Artist</h2>
+                <h2>Creative Designer</h2>
                 <h1 class="glitch" data-text="ASHAD">ASHAD</h1>
                 <p>Graphic Design | Video Editing | UI/UX | Automation <br> Crafting immersive digital experiences.</p>
                 <a href="#portfolio" class="cta-btn">View My Work</a>
             </div>
             <div class="hero-image-container">
-                <!-- User should place the image here -->
-                <img src="./assets/robot.png" alt="Ashad Cyber" class="hero-character" id="hero-char">
+                <div class="cyber-character" id="revealContainer">
+                    <!-- Face (revealed layer, underneath) -->
+                    <img src="./assets/robot-face.png" alt="Futuristic Robot Face" class="hero-img layer-face"
+                        id="faceImage">
+                    <!-- Canvas: draws helmet mask on top, erased by mouse -->
+                    <canvas id="revealCanvas" class="reveal-canvas"></canvas>
+                </div>
             </div>
         </div>
         <div class="hero-bg-overlay"></div>

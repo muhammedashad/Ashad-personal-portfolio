@@ -22,11 +22,7 @@
     <div class="bg-grid"></div>
     <div class="particles" id="particles"></div>
 
-    <!-- System status banner -->
-    <div class="hud-banner">
-        <div class="hud-indicator"></div>
-        <span class="hud-status">SYSTEM STATUS: SYNCHRONIZED | NODE: e8cb459a | SYNC LEVEL: 100%</span>
-    </div>
+
 
     <!-- Custom Cursor -->
     <div class="cursor-dot" data-cursor-dot></div>
@@ -51,10 +47,20 @@
     <section id="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h2>Creative Designer</h2>
+                <div class="hero-hud-tag">
+                    <span class="hud-blink">●</span> USER_SYSTEM // CONNECTED
+                </div>
+                <h2 class="hero-intro-text">HELLO, I'M</h2>
                 <h1 class="glitch" data-text="ASHAD">ASHAD</h1>
-                <p>Graphic Design | Video Editing | Digital Marketing <br> Crafting immersive digital experiences.</p>
-                <a href="#portfolio" class="cta-btn">View My Work</a>
+                <h3 class="hero-role-title">Graphic Designer in Calicut, Kerala</h3>
+                <p class="hero-description">Specializing in Social Media Design, Branding, Video Editing & Digital Marketing.</p>
+                <div class="hero-system-status">
+                    <span class="status-bullet">◉</span> CREATIVE SYSTEM ONLINE | DESIGNING BRANDS FOR THE FUTURE
+                </div>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="cta-btn primary-btn">EXPLORE PORTFOLIO</a>
+                    <a href="#contact" class="cta-btn secondary-btn">LET'S CONNECT</a>
+                </div>
             </div>
             <div class="hero-image-container">
                 <div class="cyber-character" id="revealContainer">
@@ -129,21 +135,27 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="icon">🎨</div>
+                    <div class="icon-container">
+                        <img src="./assets/graphic-design.png" alt="Graphic Design Icon" class="skill-icon">
+                    </div>
                     <h3>Graphic Design</h3>
-                    <p>Branding, Illustrations, layout design, and futuristic visual assets.</p>
+                    <p>Social Media Design, Brand Identity Design & Packaging Design</p>
                     <div class="card-glow"></div>
                 </div>
                 <div class="skill-card">
-                    <div class="icon">🎬</div>
+                    <div class="icon-container">
+                        <img src="./assets/video-editing.png" alt="Video Editing Icon" class="skill-icon">
+                    </div>
                     <h3>Video Editing</h3>
-                    <p>Post-production, motion graphics, VFX, and cinematic storytelling.</p>
+                    <p>Motion Graphics, Cinematic Editing, Reels & Commercial Content</p>
                     <div class="card-glow"></div>
                 </div>
                 <div class="skill-card">
-                    <div class="icon">📈</div>
+                    <div class="icon-container">
+                        <img src="./assets/digital-marketing.png" alt="Digital Marketing Icon" class="skill-icon">
+                    </div>
                     <h3>Digital Marketing</h3>
-                    <p>SEO, Social Media Strategy, Ads, and data-driven growth campaigns.</p>
+                    <p>SEO, Social Media Growth & Performance Marketing</p>
                     <div class="card-glow"></div>
                 </div>
             </div>
@@ -197,17 +209,15 @@
             </div>
             <div class="contact-content">
                 <p>Have a project in mind? Let's work together.</p>
-                <form class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdx8JnBQvvqio4PaHwXc8_qufEhHOZLi1Em71rrsEnK58bsvg/formResponse" method="POST" target="_self">
+                <form class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSehbzo9nsNiGKWzdLyfWVuYK6CKqKVHjtYqTSzjxw0Wvp7ifg/formResponse" method="POST" target="_self">
                     <input type="hidden" name="fvv" value="1">
-                    <input type="hidden" name="partialResponse" value="[null,null,&quot;4447413851033312715&quot;]">
+                    <input type="hidden" name="partialResponse" value="[null,null,&quot;1732628714292782372&quot;]">
                     <input type="hidden" name="pageHistory" value="0">
-                    <input type="hidden" name="token" value="u-p4m54BAAA.nQiAP2kzFgtZpfyTEjaQFw.UYFjPAzKK4pUD57xSYswAg">
-                    <input type="hidden" name="tag" value="AWjlRz8UmTo4apSQk5KPQ54J3CVXih+xq7z7wqAkCJqh+u0Prw==">
-                    <input type="hidden" name="fbzx" value="4447413851033312715">
+                    <input type="hidden" name="fbzx" value="1732628714292782372">
                     <input type="hidden" name="submissionTimestamp" value="-1">
-                    <input type="text" name="entry.2005620554" placeholder="Your Name" required>
-                    <input type="email" name="entry.1045781291" placeholder="Your Email" required>
-                    <textarea name="entry.1065046570" placeholder="Your Message" required></textarea>
+                    <input type="text" name="entry.1287422487" placeholder="Your Name" required>
+                    <input type="email" name="entry.1738374147" placeholder="Your Email" required>
+                    <textarea name="entry.785803051" placeholder="Your Message" required></textarea>
                     <button type="submit" class="cta-btn">Send Message</button>
                     <div class="form-status" id="formStatus"></div>
                 </form>
@@ -236,7 +246,8 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Ashad. All Rights Reserved.</p>
+        <p>&copy; 2026 Ashad Creative. All Rights Reserved.</p>
+        <p class="powered-by">Powered by <span>Muhammed Ashad K</span></p>
     </footer>
 
     <script src="main.js"></script>

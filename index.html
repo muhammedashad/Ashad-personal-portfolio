@@ -15,8 +15,18 @@
 </head>
 
 <body>
+    <!-- CRT Scanning line effects -->
+    <div class="scanline"></div>
+    <div class="cyber-overlay"></div>
+
     <div class="bg-grid"></div>
     <div class="particles" id="particles"></div>
+
+    <!-- System status banner -->
+    <div class="hud-banner">
+        <div class="hud-indicator"></div>
+        <span class="hud-status">SYSTEM STATUS: SYNCHRONIZED | NODE: e8cb459a | SYNC LEVEL: 100%</span>
+    </div>
 
     <!-- Custom Cursor -->
     <div class="cursor-dot" data-cursor-dot></div>
@@ -43,7 +53,7 @@
             <div class="hero-content">
                 <h2>Creative Designer</h2>
                 <h1 class="glitch" data-text="ASHAD">ASHAD</h1>
-                <p>Graphic Design | Video Editing | UI/UX | Automation <br> Crafting immersive digital experiences.</p>
+                <p>Graphic Design | Video Editing | Digital Marketing <br> Crafting immersive digital experiences.</p>
                 <a href="#portfolio" class="cta-btn">View My Work</a>
             </div>
             <div class="hero-image-container">
@@ -65,13 +75,48 @@
                 <h2>About Me</h2>
             </div>
             <div class="about-content">
-                <div class="profile-placeholder"></div>
+                <div class="hologram-card">
+                    <div class="hologram-grid"></div>
+                    <div class="hologram-scanner"></div>
+                    <div class="hologram-avatar">
+                        <img src="./assets/robot-face.png" alt="Hologram Avatar" class="hologram-img">
+                    </div>
+                    <div class="hologram-glow"></div>
+                </div>
                 <div class="about-text">
                     <h3>Creative Visionary</h3>
-                    <p>My name is Ashad. I'm a multimedia artist specializing in graphic design, video editing, digital
-                        marketing, UI/UX, and digital automation.</p>
-                    <p>I am currently pursuing a BSc in Visual Communication. I blend creativity with technology to
-                        craft immersive digital experiences.</p>
+                    <p>My name is Ashad. I'm a multimedia artist specializing in graphic design, video editing, and digital marketing.</p>
+                    <p>I am currently pursuing a BSc in Visual Communication. I blend creativity with technology to craft immersive digital experiences.</p>
+                    
+                    <div class="core-metrics">
+                        <div class="metric">
+                            <div class="metric-info">
+                                <span class="metric-label">GRAPHIC DESIGN</span>
+                                <span class="metric-value">95%</span>
+                            </div>
+                            <div class="metric-bar-container">
+                                <div class="metric-bar" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-info">
+                                <span class="metric-label">VIDEO EDITING</span>
+                                <span class="metric-value">90%</span>
+                            </div>
+                            <div class="metric-bar-container">
+                                <div class="metric-bar" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-info">
+                                <span class="metric-label">DIGITAL MARKETING</span>
+                                <span class="metric-value">85%</span>
+                            </div>
+                            <div class="metric-bar-container">
+                                <div class="metric-bar" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,27 +131,20 @@
                 <div class="skill-card">
                     <div class="icon">🎨</div>
                     <h3>Graphic Design</h3>
-                    <p>Branding, Illustrations, layout design.</p>
+                    <p>Branding, Illustrations, layout design, and futuristic visual assets.</p>
+                    <div class="card-glow"></div>
                 </div>
                 <div class="skill-card">
                     <div class="icon">🎬</div>
                     <h3>Video Editing</h3>
-                    <p>Post-production, motion graphics, VFX.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="icon">💻</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Web & Mobile interfaces, prototyping.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="icon">🤖</div>
-                    <h3>Automation</h3>
-                    <p>Workflow optimization, digital tools.</p>
+                    <p>Post-production, motion graphics, VFX, and cinematic storytelling.</p>
+                    <div class="card-glow"></div>
                 </div>
                 <div class="skill-card">
                     <div class="icon">📈</div>
                     <h3>Digital Marketing</h3>
-                    <p>SEO, Social Media Strategy, Ads.</p>
+                    <p>SEO, Social Media Strategy, Ads, and data-driven growth campaigns.</p>
+                    <div class="card-glow"></div>
                 </div>
             </div>
         </div>
@@ -117,27 +155,35 @@
             <div class="section-title">
                 <h2>Portfolio</h2>
             </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
+                <button class="filter-btn" data-filter="design">DESIGN</button>
+                <button class="filter-btn" data-filter="video">VIDEO</button>
+                <button class="filter-btn" data-filter="marketing">MARKETING</button>
+            </div>
             <div class="portfolio-grid">
-                <!-- Placeholders for now -->
-                <div class="portfolio-item">
-                    <div class="placeholder-img">Project 1</div>
+                <div class="portfolio-item" data-category="design" data-project="neon-branding">
+                    <div class="placeholder-img design-bg">NEON BRANDS</div>
                     <div class="overlay">
-                        <h3>Project Name</h3>
+                        <h3>Cyberpunk Branding</h3>
                         <p>Graphic Design</p>
+                        <span class="project-view-btn">SYNC INTERFACE</span>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="placeholder-img">Project 2</div>
+                <div class="portfolio-item" data-category="video" data-project="scifi-motion">
+                    <div class="placeholder-img video-bg">MOTION SPECTRUM</div>
                     <div class="overlay">
-                        <h3>Project Name</h3>
+                        <h3>Sci-Fi Motion Reel</h3>
                         <p>Video Edit</p>
+                        <span class="project-view-btn">SYNC INTERFACE</span>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="placeholder-img">Project 3</div>
+                <div class="portfolio-item" data-category="marketing" data-project="growth-hack">
+                    <div class="placeholder-img marketing-bg">QUANTUM CAMPAIGN</div>
                     <div class="overlay">
-                        <h3>Project Name</h3>
-                        <p>UI Design</p>
+                        <h3>Neon Growth Hack</h3>
+                        <p>Digital Marketing</p>
+                        <span class="project-view-btn">SYNC INTERFACE</span>
                     </div>
                 </div>
             </div>
@@ -151,15 +197,43 @@
             </div>
             <div class="contact-content">
                 <p>Have a project in mind? Let's work together.</p>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
+                <form class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdx8JnBQvvqio4PaHwXc8_qufEhHOZLi1Em71rrsEnK58bsvg/formResponse" method="POST" target="_self">
+                    <input type="hidden" name="fvv" value="1">
+                    <input type="hidden" name="partialResponse" value="[null,null,&quot;4447413851033312715&quot;]">
+                    <input type="hidden" name="pageHistory" value="0">
+                    <input type="hidden" name="token" value="u-p4m54BAAA.nQiAP2kzFgtZpfyTEjaQFw.UYFjPAzKK4pUD57xSYswAg">
+                    <input type="hidden" name="tag" value="AWjlRz8UmTo4apSQk5KPQ54J3CVXih+xq7z7wqAkCJqh+u0Prw==">
+                    <input type="hidden" name="fbzx" value="4447413851033312715">
+                    <input type="hidden" name="submissionTimestamp" value="-1">
+                    <input type="text" name="entry.2005620554" placeholder="Your Name" required>
+                    <input type="email" name="entry.1045781291" placeholder="Your Email" required>
+                    <textarea name="entry.1065046570" placeholder="Your Message" required></textarea>
                     <button type="submit" class="cta-btn">Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
                 </form>
             </div>
         </div>
     </section>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <div class="modal-placeholder-img" id="modalImg">PROJECT SPECIMEN</div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Project Name</h2>
+                    <div class="modal-meta">
+                        <span id="modalCategory">Category</span> | <span id="modalSoftware">Tools Used</span>
+                    </div>
+                    <p id="modalDesc">Detailed project description goes here.</p>
+                    <a href="#" id="modalLink" target="_blank" class="cta-btn">EXECUTE LIVE VIEW</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Ashad. All Rights Reserved.</p>

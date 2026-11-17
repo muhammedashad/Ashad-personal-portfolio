@@ -4,19 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashad | Graphic Designer</title>
+    <title>Muhammed Ashad K | Best Graphic Designer in Calicut, Kerala</title>
+
+    <!-- Primary SEO Metadata -->
+    <meta name="description"
+        content="Muhammed Ashad K is a Graphic Designer and Digital Marketer in Calicut, Kerala, specializing in branding, social media design, advertising creatives, video editing and digital marketing campaigns.">
+    <meta name="keywords"
+        content="Muhammed Ashad K, Best Graphic Designer in Calicut, Best Digital Marketer in Calicut, Best Graphic Designer in Kerala, Best Branding and Visual Identity, Best Social Media Design, Best Digital Marketing Creatives, Best Video Editing, Best WordPress Website Development">
+    <meta name="author" content="Muhammed Ashad K">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://muhammedashad.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muhammedashad.com/">
+    <meta property="og:title" content="Muhammed Ashad K | Best Graphic Designer in Calicut, Kerala">
+    <meta property="og:description"
+        content="Muhammed Ashad K is a Graphic Designer and Digital Marketer in Calicut, Kerala, specializing in branding, social media design, advertising creatives, video editing and digital marketing campaigns.">
+    <meta property="og:image" content="https://muhammedashad.com/assets/robot-face.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://muhammedashad.com/">
+    <meta name="twitter:title" content="Muhammed Ashad K | Best Graphic Designer in Calicut, Kerala">
+    <meta name="twitter:description"
+        content="Muhammed Ashad K is a Graphic Designer and Digital Marketer in Calicut, Kerala, specializing in branding, social media design, advertising creatives, video editing and digital marketing campaigns.">
+    <meta name="twitter:image" content="https://muhammedashad.com/assets/robot-face.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="css/style.css?v=5.3">
+    <link rel="stylesheet" href="css/cursor.css?v=4.1">
+    <link rel="stylesheet" href="css/feedback.css?v=3.1">
+    <link rel="stylesheet" href="css/certifications.css?v=3.1">
+    <link rel="stylesheet" href="css/globe.css?v=2.1">
+    <style>
+        /* Enforce Single-Row Mobile Header & Absolute Removal of Old Navigation */
+        @media (max-width: 900px) {
+
+            #desktopNavLinks,
+            .desktop-nav-links,
+            nav .nav-links,
+            nav ul {
+                display: none !important;
+                visibility: hidden !important;
+                width: 0 !important;
+                height: 0 !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                border: none !important;
+                overflow: hidden !important;
+                position: absolute !important;
+                left: -9999px !important;
+                pointer-events: none !important;
+            }
+
+            nav {
+                height: 60px !important;
+                max-height: 60px !important;
+                overflow: hidden !important;
+                flex-wrap: nowrap !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                padding: 14px 20px !important;
+            }
+
+            .hamburger {
+                display: flex !important;
+            }
+        }
+
+        @media (min-width: 901px) {
+            .mobile-nav-overlay {
+                display: none !important;
+                visibility: hidden !important;
+                width: 0 !important;
+                height: 0 !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                border: none !important;
+                position: fixed !important;
+                top: -9999px !important;
+                left: -9999px !important;
+                pointer-events: none !important;
+            }
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) for Google SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammed Ashad K",
+      "url": "https://muhammedashad.com",
+      "image": "https://muhammedashad.com/assets/robot-face.png",
+      "jobTitle": "Graphic Designer & Creative Professional",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Calicut",
+        "addressRegion": "Kerala",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://in.pinterest.com/muhammedashad2005/",
+        "https://www.instagram.com/as.hxd/",
+        "https://www.linkedin.com/in/muhammed-ashad-79a329388/",
+        "https://www.behance.net/muhammedashad",
+        "https://github.com/muhammedashad"
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <!-- CRT Scanning line effects -->
-    <div class="scanline"></div>
+    <!-- Global Space Background (Subtle stars, cosmic particles & ambient glow) -->
+    <canvas id="globalSpaceCanvas" class="global-space-canvas" aria-hidden="true"></canvas>
+
+    <!-- Cyber background overlay -->
     <div class="cyber-overlay"></div>
 
     <div class="bg-grid"></div>
@@ -27,9 +134,10 @@
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
-    <nav>
+    <nav id="mainNav">
         <div class="logo">ASHAD</div>
-        <ul class="nav-links">
+        <!-- Desktop Navigation Links (Visible on desktop, completely removed on mobile layout) -->
+        <ul class="nav-links desktop-nav-links" id="desktopNavLinks">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -37,29 +145,42 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
+        <!-- Mobile Hamburger Button (Strictly on same row as logo, no second row) -->
+        <button class="hamburger" id="navToggle" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="mobileNavOverlay">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </nav>
 
     <section id="hero" class="reveal-on-scroll">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-hud-tag">
-                    <span class="hud-blink">●</span> USER_SYSTEM // CONNECTED
+                <!-- Integrated Mobile Portrait (Upper portion of single hero card on mobile) -->
+                <div class="mobile-hero-portrait-wrapper" aria-hidden="true">
+                    <div class="mobile-portrait-ambient-glow"></div>
+                    <img src="./assets/robot-face.png" alt="Muhammed Ashad" class="mobile-hero-portrait-img">
+                    <div class="mobile-portrait-overlay-gradient"></div>
                 </div>
-                <h2 class="hero-intro-text">HELLO, I'M</h2>
-                <h1 class="glitch" data-text="ASHAD">ASHAD</h1>
-                <h3 class="hero-role-title">Graphic Designer in Calicut, Kerala</h3>
-                <p class="hero-description">Specializing in Social Media Design, Branding, Video Editing & Digital Marketing.</p>
-                <div class="hero-system-status">
-                    <span class="status-bullet">◉</span> CREATIVE SYSTEM ONLINE | DESIGNING BRANDS FOR THE FUTURE
-                </div>
-                <div class="hero-actions">
-                    <a href="#portfolio" class="cta-btn primary-btn">EXPLORE PORTFOLIO</a>
-                    <a href="#contact" class="cta-btn secondary-btn">LET'S CONNECT</a>
+
+                <div class="hero-content-body">
+                    <div class="hero-hud-tag">
+                        <span class="hud-blink">●</span> USER_SYSTEM // CONNECTED
+                    </div>
+                    <div class="hero-intro-text">HELLO, I'M</div>
+                    <div class="glitch" data-text="ASHAD">ASHAD</div>
+                    <h1 class="hero-role-title">Graphic Designer &amp; Digital Marketer in Calicut, Kerala</h1>
+                    <p class="hero-description">Creating impactful visual experiences through graphic design, branding,
+                        social media creatives, advertising campaigns, video editing and digital marketing. I combine
+                        creative thinking and technology to help brands communicate, connect and grow.</p>
+                    <div class="hero-system-status">
+                        <span class="status-bullet">◉</span> CREATIVE SYSTEM ONLINE | DESIGNING BRANDS FOR THE FUTURE
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="cta-btn primary-btn">EXPLORE PORTFOLIO</a>
+                        <a href="assets/Muhammed_Ashad_K_CV.pdf" download="Muhammed_Ashad_K_CV.pdf" target="_blank" rel="noopener noreferrer" class="cta-btn secondary-btn">DOWNLOAD MY CV</a>
+                    </div>
                 </div>
             </div>
             <div class="hero-image-container">
@@ -72,56 +193,127 @@
                 </div>
             </div>
         </div>
-        <div class="hero-bg-overlay"></div>
+
     </section>
 
-    <section id="about" class="reveal-on-scroll">
+    <section id="about" class="about-section reveal-on-scroll">
         <div class="container">
             <div class="section-title">
-                <h2>About Me</h2>
+                <h2>ABOUT ME</h2>
             </div>
             <div class="about-content">
-                <div class="hologram-card">
-                    <div class="hologram-grid"></div>
-                    <div class="hologram-scanner"></div>
-                    <div class="hologram-avatar">
-                        <img src="./assets/robot-face.png" alt="Hologram Avatar" class="hologram-img">
+                <!-- Static Glass-Framed Cyber Portrait (NO 3D flip, NO morphing, NO tone changing) -->
+                <div class="about-portrait-wrapper">
+                    <div class="about-portrait-frame">
+                        <!-- Technical HUD Corner Brackets -->
+                        <span class="hud-corner hud-corner-tl" aria-hidden="true"></span>
+                        <span class="hud-corner hud-corner-tr" aria-hidden="true"></span>
+                        <span class="hud-corner hud-corner-bl" aria-hidden="true"></span>
+                        <span class="hud-corner hud-corner-br" aria-hidden="true"></span>
+
+                        <!-- Ambient Lighting Layers -->
+                        <div class="portrait-ambient-glow" aria-hidden="true"></div>
+                        <div class="portrait-grid-bg" aria-hidden="true"></div>
+
+                        <!-- Technical HUD Header -->
+                        <div class="portrait-hud-header">
+                            <span class="hud-status-dot" aria-hidden="true"></span>
+                            <span class="hud-status-text">SYS_ID // 02_CREATIVE_NODE</span>
+                            <span class="hud-status-badge">ONLINE</span>
+                        </div>
+
+                        <!-- Static Portrait Image -->
+                        <div class="portrait-image-container">
+                            <img src="./assets/robot-face.png"
+                                alt="Muhammed Ashad K - Graphic Designer &amp; Digital Marketer in Calicut, Kerala"
+                                class="about-portrait-img" loading="lazy">
+                            <div class="portrait-scan-overlay" aria-hidden="true"></div>
+                            <div class="portrait-border-glow" aria-hidden="true"></div>
+                        </div>
+
+                        <!-- Technical HUD Footer Metadata -->
+                        <div class="portrait-hud-footer">
+                            <div class="hud-tag-item">
+                                <span class="hud-label">SUBJECT:</span>
+                                <span class="hud-value">MUHAMMED ASHAD K</span>
+                            </div>
+                            <div class="hud-tag-item">
+                                <span class="hud-label">LOCATION:</span>
+                                <span class="hud-value">CALICUT, KERALA</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hologram-glow"></div>
                 </div>
+
+                <!-- Upgraded About Narrative (Top Row Right Column) -->
                 <div class="about-text">
-                    <h3>Creative Visionary</h3>
-                    <p>My name is Ashad. I'm a graphic designer specializing in graphic design, video editing, and digital marketing.</p>
-                    <p>I am currently pursuing a BSc in Visual Communication. I blend creativity with technology to craft immersive digital experiences.</p>
-                    
-                    <div class="core-metrics">
-                        <div class="metric">
-                            <div class="metric-info">
-                                <span class="metric-label">GRAPHIC DESIGN</span>
-                                <span class="metric-value">95%</span>
-                            </div>
-                            <div class="metric-bar-container">
-                                <div class="metric-bar" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-info">
-                                <span class="metric-label">VIDEO EDITING</span>
-                                <span class="metric-value">90%</span>
-                            </div>
-                            <div class="metric-bar-container">
-                                <div class="metric-bar" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-info">
-                                <span class="metric-label">DIGITAL MARKETING</span>
-                                <span class="metric-value">85%</span>
-                            </div>
-                            <div class="metric-bar-container">
-                                <div class="metric-bar" data-progress="85"></div>
-                            </div>
-                        </div>
+                    <div class="about-badge-row">
+                        <span class="about-hud-tag">
+                            <span class="hud-pulse-dot" aria-hidden="true">●</span> CREATIVE PROFILE
+                        </span>
+                        <span class="about-loc-tag">CALICUT, KERALA, INDIA</span>
+                    </div>
+
+                    <h2 class="about-role-title">Graphic Designer &amp; Digital Marketer in Calicut, Kerala</h2>
+                    <!-- Added but hidden: Best Graphic Designer & Digital Marketing Creative in Calicut, Kerala -->
+                    <div class="seo-title-alt" style="display: none;" aria-hidden="true">Best Graphic Designer &amp;
+                        Digital Marketing Creative in Calicut, Kerala</div>
+
+                    <div class="about-bio">
+                        <p class="about-paragraph">
+                            I'm Muhammed Ashad K, a Graphic Designer and Digital Marketer based in Calicut, Kerala,
+                            India. With an academic background in B.Sc. Visual Communication from Alagappa University, I
+                            combine visual design, marketing and technology to create meaningful digital experiences.
+                        </p>
+                        <p class="about-paragraph">
+                            Currently working as Creative Head at Kabooom, an in-house creative and marketing agency, I
+                            lead creative direction, guide designers, coordinate design workflows and contribute
+                            hands-on to branding, advertising campaigns, social media creatives and digital projects.
+                        </p>
+                        <p class="about-paragraph">
+                            My creative work also covers video editing, WordPress website development, UI/UX design,
+                            landing pages, AI-assisted content creation and creative automation.
+                        </p>
+                        <p class="about-paragraph">
+                            I focus on transforming ideas into effective visual communication and helping brands build a
+                            strong digital presence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full-Width Row: Core Capabilities Spanning Complete Width Below Both Columns -->
+            <div class="about-skills-section">
+                <div class="about-skills-header-bar">
+                    <h4 class="about-skills-heading">
+                        <span class="skills-prefix">//</span> CORE CAPABILITIES
+                    </h4>
+                    <span class="skills-sys-tag">SYS_MATRIX // 06 ACTIVE NODES</span>
+                </div>
+                <div class="about-skills-grid">
+                    <div class="about-skill-chip">
+                        <span class="chip-icon" aria-hidden="true">◈</span>
+                        <span class="chip-text">GRAPHIC DESIGN &amp; BRANDING</span>
+                    </div>
+                    <div class="about-skill-chip">
+                        <span class="chip-icon" aria-hidden="true">◈</span>
+                        <span class="chip-text">VIDEO EDITING &amp; MULTIMEDIA</span>
+                    </div>
+                    <div class="about-skill-chip">
+                        <span class="chip-icon" aria-hidden="true">◈</span>
+                        <span class="chip-text">DIGITAL MARKETING &amp; CAMPAIGNS</span>
+                    </div>
+                    <div class="about-skill-chip">
+                        <span class="chip-icon" aria-hidden="true">◈</span>
+                        <span class="chip-text">WEB DESIGN &amp; DEVELOPMENT</span>
+                    </div>
+                    <div class="about-skill-chip">
+                        <span class="chip-icon" aria-hidden="true">◈</span>
+                        <span class="chip-text">UI/UX DESIGN</span>
+                    </div>
+                    <div class="about-skill-chip">
+                        <span class="chip-icon" aria-hidden="true">◈</span>
+                        <span class="chip-text">AI &amp; CREATIVE AUTOMATION</span>
                     </div>
                 </div>
             </div>
@@ -160,72 +352,149 @@
     <section id="experience" class="timeline-section reveal-on-scroll">
         <div class="container">
             <div class="section-title">
-                <h2>Experience</h2>
+                <h2>EXPERIENCE</h2>
             </div>
-            
+
             <div class="timeline single-item-timeline">
-                <!-- Kabooom Experience -->
+                <!-- Kabooom Experience Card -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
+                        <!-- Experience Header with Visual Hierarchy -->
                         <div class="exp-header">
-                            <div class="exp-logo">
-                                <img src="./assets/Kabooom logo.png" alt="Kabooom">
-                            </div>
-                            <div class="exp-title-group">
-                                <h3>GRAPHIC DESIGNER</h3>
-                                <h4>Kabooom</h4>
-                                <div class="exp-meta">
-                                    <span class="exp-date">Sep 2025 – Present</span>
-                                    <span class="exp-divider">|</span>
-                                    <span class="exp-location">Calicut, Kerala</span>
+                            <div class="exp-header-main">
+                                <div class="exp-promotion-indicator">
+                                    <span class="hud-blink">●</span> CAREER PROGRESSION // CREATIVE DESIGNER → CREATIVE
+                                    HEAD
+                                </div>
+                                <h3 class="exp-job-title">CREATIVE HEAD</h3>
+                                <div class="exp-company-block">
+                                    <div class="exp-logo-frame">
+                                        <img src="./assets/Kabooom logo.png" loading="lazy" decoding="async"
+                                            alt="Kabooom — In-house Creative &amp; Marketing Agency"
+                                            class="exp-company-logo">
+                                    </div>
+                                    <div class="exp-company-details">
+                                        <h4 class="exp-company-name">Kabooom <span class="exp-agency-tag">— In-house
+                                                Creative &amp; Marketing Agency</span></h4>
+                                        <div class="exp-meta">
+                                            <span class="exp-date">September 2025 – Present</span>
+                                            <span class="exp-divider" aria-hidden="true">|</span>
+                                            <span class="exp-location">Calicut, Kerala</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
+
+                        <!-- Experience Description -->
                         <div class="exp-body">
-                            <p class="exp-desc">Working as a Graphic Designer at Kabooom, an in-house creative and marketing agency, creating visual content and creative solutions for brands, campaigns, and digital marketing projects. My role spans graphic design, video editing, UI/UX, website creation, AI-assisted creative development, campaign concepts, and digital experiences.</p>
-                            
-                            <h5 class="exp-subtitle">WHAT I WORK ON:</h5>
-                            <ul class="exp-list grid-list">
-                                <li>Social Media & Campaign Design</li>
-                                <li>Brand Identity & Advertising Creatives</li>
-                                <li>Video Editing & Reels</li>
-                                <li>UI/UX & WordPress Websites</li>
-                                <li>AI Content & Creative Development</li>
-                                <li>Campaign Concepts & Strategy</li>
-                                <li>Landing Pages & Vibe Coding</li>
-                                <li>Marketing Automation</li>
-                                <li>Junior Designer Guidance</li>
-                                <li>Creative & On-Camera Content</li>
-                            </ul>
+                            <div class="exp-desc-wrapper">
+                                <p class="exp-desc">Promoted from Creative Designer to Creative Head at Kabooom, an
+                                    in-house creative and marketing agency. I oversee creative direction and coordinate
+                                    the team's day-to-day design operations, ensuring consistent visual quality across
+                                    brands, campaigns, and digital projects.</p>
+                                <p class="exp-desc">Alongside leading and guiding designers, I remain actively involved
+                                    in creative execution, developing visual concepts and delivering design solutions
+                                    across multiple projects and platforms.</p>
+                            </div>
+
+                            <!-- What I Work On: Two Balanced Responsibility Cards -->
+                            <div class="exp-responsibilities-block">
+                                <h5 class="exp-subtitle">WHAT I WORK ON:</h5>
+                                <div class="exp-responsibilities-grid">
+                                    <!-- Column 1: Leadership & Creative Direction -->
+                                    <div class="exp-resp-card resp-leadership">
+                                        <div class="exp-resp-header">
+                                            <span class="resp-header-icon" aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-users-round">
+                                                    <path d="M18 21a8 8 0 0 0-16 0" />
+                                                    <circle cx="10" cy="8" r="5" />
+                                                    <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
+                                                </svg>
+                                            </span>
+                                            <h6 class="resp-header-title">LEADERSHIP &amp; CREATIVE DIRECTION</h6>
+                                        </div>
+                                        <ul class="exp-list">
+                                            <li>Creative Direction &amp; Visual Quality</li>
+                                            <li>Creative Team Management &amp; Guidance</li>
+                                            <li>Designer Task Planning &amp; Work Scheduling</li>
+                                            <li>Design Reviews &amp; Quality Control</li>
+                                            <li>Campaign Concepts &amp; Creative Strategy</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Column 2: Hands-On Creative Execution -->
+                                    <div class="exp-resp-card resp-execution">
+                                        <div class="exp-resp-header">
+                                            <span class="resp-header-icon" aria-hidden="true">◈</span>
+                                            <h6 class="resp-header-title">HANDS-ON CREATIVE EXECUTION</h6>
+                                        </div>
+                                        <ul class="exp-list">
+                                            <li>Brand Identity &amp; Advertising Creatives</li>
+                                            <li>Social Media &amp; Campaign Design</li>
+                                            <li>Video Editing &amp; Multimedia Production</li>
+                                            <li>UI/UX &amp; WordPress Website Development</li>
+                                            <li>Landing Pages &amp; Digital Experiences</li>
+                                            <li>AI-assisted Creative Development &amp; Automation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="exp-clients" style="margin-top: 30px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 25px;">
+
+                        <!-- Clients I've Worked With -->
+                        <div class="exp-clients">
                             <h5 class="exp-subtitle">CLIENTS I'VE WORKED WITH:</h5>
                             <div class="exp-client-grid">
-                                <a href="https://www.instagram.com/skill_arcadia?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="exp-logo-container">
-                                    <img src="./assets/Skill Arcadia logo.png" alt="Skill Arcadia" onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
+                                <a href="https://www.instagram.com/skill_arcadia?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                                    target="_blank" rel="noopener noreferrer" class="exp-logo-container"
+                                    title="Skill Arcadia" aria-label="Skill Arcadia">
+                                    <img src="./assets/Skill Arcadia logo.png" loading="lazy" decoding="async" alt="Skill Arcadia"
+                                        onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
                                 </a>
-                                <a href="https://www.instagram.com/mishhals_commerce_hub?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="exp-logo-container">
-                                    <img src="./assets/Mishhal's Commerce Hub Logo.png" alt="Mishhal's Commerce Hub" onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
+                                <a href="https://www.instagram.com/mishhals_commerce_hub?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                                    target="_blank" rel="noopener noreferrer" class="exp-logo-container"
+                                    title="Mishhal's Commerce Hub" aria-label="Mishhal's Commerce Hub">
+                                    <img src="./assets/Mishhal's Commerce Hub Logo.png" loading="lazy" decoding="async" alt="Mishhal's Commerce Hub"
+                                        onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
                                 </a>
-                                <a href="https://www.instagram.com/ziasilverstories?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="exp-logo-container">
-                                    <img src="./assets/Zia Silver Logo.png" alt="Zia Silver" onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
+                                <a href="https://www.instagram.com/ziasilverstories?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                                    target="_blank" rel="noopener noreferrer" class="exp-logo-container"
+                                    title="Zia Silver" aria-label="Zia Silver">
+                                    <img src="./assets/Zia Silver Logo.png" loading="lazy" decoding="async" alt="Zia Silver"
+                                        onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
                                 </a>
-                                <a href="https://www.instagram.com/fareedajewellery?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="exp-logo-container">
-                                    <img src="./assets/Fareeda Jewellery Logo.png" alt="Fareeda Jewellery" onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
+                                <a href="https://www.instagram.com/fareedajewellery?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                                    target="_blank" rel="noopener noreferrer" class="exp-logo-container"
+                                    title="Fareeda Jewellery" aria-label="Fareeda Jewellery">
+                                    <img src="./assets/Fareeda Jewellery Logo.png" loading="lazy" decoding="async" alt="Fareeda Jewellery"
+                                        onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
                                 </a>
-                                <a href="https://www.instagram.com/poyilwoods?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="exp-logo-container">
-                                    <img src="./assets/Poyilwoods Logo.PNG" alt="Poyilwoods" onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
+                                <a href="https://www.instagram.com/poyilwoods?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                                    target="_blank" rel="noopener noreferrer" class="exp-logo-container"
+                                    title="Poyilwoods" aria-label="Poyilwoods">
+                                    <img src="./assets/Poyilwoods Logo.PNG" loading="lazy" decoding="async" alt="Poyilwoods"
+                                        onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
                                 </a>
-                                <a href="https://www.instagram.com/woods.fareeda?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="exp-logo-container">
-                                    <img src="./assets/Fareeda Woods Logo.png" alt="Fareeda Woods" onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
+                                <a href="https://www.instagram.com/woods.fareeda?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                                    target="_blank" rel="noopener noreferrer" class="exp-logo-container"
+                                    title="Fareeda Woods" aria-label="Fareeda Woods">
+                                    <img src="./assets/Fareeda Woods Logo.png" loading="lazy" decoding="async" alt="Fareeda Woods"
+                                        onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
                                 </a>
-                                <a href="https://www.instagram.com/dhanishfarhad?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="exp-logo-container">
-                                    <img src="./assets/CA Dhanish Farhad & Co. Logo.png" alt="Dhanish Farhad & Co." onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
+                                <a href="https://www.instagram.com/dhanishfarhad?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                                    target="_blank" rel="noopener noreferrer" class="exp-logo-container"
+                                    title="CA Dhanish Farhad & Co." aria-label="CA Dhanish Farhad & Co.">
+                                    <img src="./assets/CA Dhanish Farhad & Co. Logo.png" loading="lazy" decoding="async" alt="CA Dhanish Farhad & Co."
+                                        onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
                                 </a>
-                                <div class="exp-logo-container">
-                                    <img src="./assets/Trust & Rise Logo.png" alt="Trust & Rise" onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
+                                <div class="exp-logo-container" title="Trust &amp; Rise" aria-label="Trust &amp; Rise">
+                                    <img src="./assets/Trust & Rise Logo.png" loading="lazy" decoding="async" alt="Trust & Rise"
+                                        onerror="this.src='./assets/robot-face.png'; this.classList.add('fallback')">
                                 </div>
                             </div>
                         </div>
@@ -234,91 +503,1027 @@
             </div>
         </div>
     </section>
-
-
 
     <section id="skills" class="reveal-on-scroll">
         <div class="container">
             <div class="section-title">
-                <h2>My Skills</h2>
+                <h2>SKILLS &amp; SERVICES</h2>
+                <p class="skills-subtitle">Creative solutions across design, marketing, multimedia and technology.</p>
             </div>
             <div class="skills-grid">
+                <!-- CARD 01: GRAPHIC DESIGN & BRANDING -->
                 <div class="skill-card">
-                    <div class="icon-container">
-                        <img src="./assets/graphic-design.png" alt="Graphic Design Icon" class="skill-icon">
+                    <span class="skill-corner tl"></span>
+                    <span class="skill-corner tr"></span>
+                    <span class="skill-corner bl"></span>
+                    <span class="skill-corner br"></span>
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrap" aria-label="Graphic Design & Branding Icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m12 19 7-7 3 3-7 7-3-3z" />
+                                <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                <path d="m2 2 7.586 7.586" />
+                                <circle cx="11" cy="11" r="2" />
+                            </svg>
+                        </div>
+                        <span class="skill-card-node">NODE // 01</span>
                     </div>
-                    <h3>Graphic Design</h3>
-                    <p>Social Media Design, Brand Identity Design & Packaging Design</p>
+                    <h3 class="skill-card-title">GRAPHIC DESIGN &amp; BRANDING</h3>
+                    <p class="skill-card-desc">Creating distinctive visual identities and compelling brand
+                        communication.</p>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-services-wrapper">
+                        <span class="skill-services-label">// CORE DELIVERABLES</span>
+                        <ul class="skill-services-list">
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Logo Design
+                                    &amp; Visual Identity</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Social Media
+                                    Creatives &amp; Banners</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Advertising
+                                    &amp; Promotional Graphics</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Marketing
+                                    Collateral &amp; Print Assets</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Poster, Flyer
+                                    &amp; Billboard Design</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Typography
+                                    &amp; Layout Systems</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Packaging
+                                    &amp; Label Design</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Brand
+                                    Guidelines &amp; Style Kits</span></li>
+                        </ul>
+                    </div>
                     <div class="card-glow"></div>
                 </div>
+
+                <!-- CARD 02: VIDEO EDITING & MULTIMEDIA -->
                 <div class="skill-card">
-                    <div class="icon-container">
-                        <img src="./assets/video-editing.png" alt="Video Editing Icon" class="skill-icon">
+                    <span class="skill-corner tl"></span>
+                    <span class="skill-corner tr"></span>
+                    <span class="skill-corner bl"></span>
+                    <span class="skill-corner br"></span>
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrap" aria-label="Video Editing & Multimedia Icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="2.18" ry="2.18" />
+                                <line x1="7" x2="7" y1="2" y2="22" />
+                                <line x1="17" x2="17" y1="2" y2="22" />
+                                <line x1="2" x2="22" y1="12" y2="12" />
+                                <line x1="2" x2="7" y1="7" y2="7" />
+                                <line x1="2" x2="7" y1="17" y2="17" />
+                                <line x1="17" x2="22" y1="7" y2="7" />
+                                <line x1="17" x2="22" y1="17" y2="17" />
+                            </svg>
+                        </div>
+                        <span class="skill-card-node">NODE // 02</span>
                     </div>
-                    <h3>Video Editing</h3>
-                    <p>Motion Graphics, Cinematic Editing, Reels & Commercial Content</p>
+                    <h3 class="skill-card-title">VIDEO EDITING &amp; MULTIMEDIA</h3>
+                    <p class="skill-card-desc">Engaging visual storytelling through dynamic video and audio production.
+                    </p>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-services-wrapper">
+                        <span class="skill-services-label">// CORE DELIVERABLES</span>
+                        <ul class="skill-services-list">
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Reels, Shorts
+                                    &amp; Social Video</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Promotional
+                                    &amp; Commercial Video Editing</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Motion
+                                    Graphics &amp; Animated Titles</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>YouTube
+                                    Content &amp; Storytelling</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Audio Cleanup
+                                    &amp; Sound Synchronization</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Color Grading
+                                    &amp; Visual Correction</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Subtitling
+                                    &amp; Kinetic Typography</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Multi-Platform
+                                    Video Optimization</span></li>
+                        </ul>
+                    </div>
                     <div class="card-glow"></div>
                 </div>
+
+                <!-- CARD 03: DIGITAL MARKETING & CAMPAIGNS -->
                 <div class="skill-card">
-                    <div class="icon-container">
-                        <img src="./assets/digital-marketing.png" alt="Digital Marketing Icon" class="skill-icon">
+                    <span class="skill-corner tl"></span>
+                    <span class="skill-corner tr"></span>
+                    <span class="skill-corner bl"></span>
+                    <span class="skill-corner br"></span>
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrap" aria-label="Digital Marketing & Campaigns Icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m3 11 18-5v12L3 14v-3z" />
+                                <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
+                                <path d="M22 6v12" />
+                            </svg>
+                        </div>
+                        <span class="skill-card-node">NODE // 03</span>
                     </div>
-                    <h3>Digital Marketing</h3>
-                    <p>SEO, Social Media Growth & Performance Marketing</p>
+                    <h3 class="skill-card-title">DIGITAL MARKETING &amp; CAMPAIGNS</h3>
+                    <p class="skill-card-desc">High-impact creative assets and visual strategy for marketing campaigns.
+                    </p>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-services-wrapper">
+                        <span class="skill-services-label">// CORE DELIVERABLES</span>
+                        <ul class="skill-services-list">
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Social Media
+                                    Marketing Creatives</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Ad Creatives
+                                    for Meta &amp; Google</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Campaign
+                                    Concepts &amp; Visual Direction</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Content
+                                    Strategy &amp; Visual Planning</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Promotional
+                                    Launch Graphics &amp; Banners</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Brand
+                                    Awareness Campaign Assets</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Marketing Team
+                                    Asset Kits &amp; Templates</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Audience
+                                    Engagement Creatives</span></li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- CARD 04: WEB DESIGN & DEVELOPMENT -->
+                <div class="skill-card">
+                    <span class="skill-corner tl"></span>
+                    <span class="skill-corner tr"></span>
+                    <span class="skill-corner bl"></span>
+                    <span class="skill-corner br"></span>
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrap" aria-label="Web Design & Development Icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="14" x="2" y="3" rx="2" />
+                                <line x1="8" x2="16" y1="21" y2="21" />
+                                <line x1="12" x2="12" y1="17" y2="21" />
+                                <polyline points="7 10 9 12 7 14" />
+                                <line x1="12" x2="15" y1="14" y2="14" />
+                            </svg>
+                        </div>
+                        <span class="skill-card-node">NODE // 04</span>
+                    </div>
+                    <h3 class="skill-card-title">WEB DESIGN &amp; DEVELOPMENT</h3>
+                    <p class="skill-card-desc">Modern, responsive digital experiences built for engagement and
+                        conversion.</p>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-services-wrapper">
+                        <span class="skill-services-label">// CORE DELIVERABLES</span>
+                        <ul class="skill-services-list">
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>UI/UX Design
+                                    &amp; Prototyping</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Responsive
+                                    Website Design &amp; Layouts</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>WordPress
+                                    Website Creation</span></li>
+                            <li class="skill-service-item"><span
+                                    class="skill-bullet">&#9672;</span><span>High-Converting Landing Pages</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Portfolio
+                                    &amp; Creative Brand Websites</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Wireframing
+                                    &amp; User Flow Design</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Creative Web
+                                    Experiences &amp; Vibe Coding</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Cross-Browser
+                                    &amp; Mobile Optimization</span></li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- CARD 05: AI & CREATIVE AUTOMATION -->
+                <div class="skill-card">
+                    <span class="skill-corner tl"></span>
+                    <span class="skill-corner tr"></span>
+                    <span class="skill-corner bl"></span>
+                    <span class="skill-corner br"></span>
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrap" aria-label="AI & Creative Automation Icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="16" height="16" x="4" y="4" rx="2" />
+                                <rect width="6" height="6" x="9" y="9" rx="1" />
+                                <path d="M15 2v2" />
+                                <path d="M15 20v2" />
+                                <path d="M2 15h2" />
+                                <path d="M2 9h2" />
+                                <path d="M20 15h2" />
+                                <path d="M20 9h2" />
+                                <path d="M9 2v2" />
+                                <path d="M9 20v2" />
+                            </svg>
+                        </div>
+                        <span class="skill-card-node">NODE // 05</span>
+                    </div>
+                    <h3 class="skill-card-title">AI &amp; CREATIVE AUTOMATION</h3>
+                    <p class="skill-card-desc">Leveraging cutting-edge AI tools to accelerate workflows and produce
+                        innovative outcomes.</p>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-services-wrapper">
+                        <span class="skill-services-label">// CORE DELIVERABLES</span>
+                        <ul class="skill-services-list">
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>AI-Assisted
+                                    Graphic Design Workflows</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Generative AI
+                                    Visuals &amp; Image Synthesis</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Creative
+                                    Workflow Automation</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Prompt
+                                    Crafting &amp; Creative Exploration</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Rapid Concept
+                                    Prototyping &amp; Ideation</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Creative
+                                    Production Efficiency</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Content
+                                    Automation Pipelines</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Modern Digital
+                                    Creative Tool Integration</span></li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- CARD 06: CREATIVE STRATEGY & COLLABORATION -->
+                <div class="skill-card">
+                    <span class="skill-corner tl"></span>
+                    <span class="skill-corner tr"></span>
+                    <span class="skill-corner bl"></span>
+                    <span class="skill-corner br"></span>
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrap" aria-label="Creative Strategy & Collaboration Icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                                <path d="M9 18h6" />
+                                <path d="M10 22h4" />
+                            </svg>
+                        </div>
+                        <span class="skill-card-node">NODE // 06</span>
+                    </div>
+                    <h3 class="skill-card-title">CREATIVE STRATEGY &amp; COLLABORATION</h3>
+                    <p class="skill-card-desc">Guiding creative direction from initial concept to high-impact execution.
+                    </p>
+                    <div class="skill-card-divider"></div>
+                    <div class="skill-services-wrapper">
+                        <span class="skill-services-label">// CORE DELIVERABLES</span>
+                        <ul class="skill-services-list">
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Creative
+                                    Direction &amp; Visual Strategy</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Campaign
+                                    Ideation &amp; Brainstorming</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Brand Identity
+                                    Consistency</span></li>
+                            <li class="skill-service-item"><span
+                                    class="skill-bullet">&#9672;</span><span>Cross-Functional Team Collaboration</span>
+                            </li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Project
+                                    Workflow Management &amp; Delivery</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Client
+                                    Communication &amp; Presentations</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Creative
+                                    Quality Assurance (QA)</span></li>
+                            <li class="skill-service-item"><span class="skill-bullet">&#9672;</span><span>Junior
+                                    Designer Guidance &amp; Mentorship</span></li>
+                        </ul>
+                    </div>
                     <div class="card-glow"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="reveal-on-scroll">
-        <div class="container">
+    <!-- 3D CREATIVE UNIVERSE PORTFOLIO SECTION -->
+    <section id="portfolio" class="universe-section reveal-on-scroll">
+        <!-- Animated Space Canvas for Portfolio Section -->
+        <canvas id="universeSpaceCanvas" class="universe-space-canvas" aria-hidden="true"></canvas>
+
+        <div class="universe-cyber-grid-bg" aria-hidden="true"></div>
+
+        <!-- TOP CENTERED HEADING -->
+        <div class="universe-header-centered">
             <div class="section-title">
-                <h2>Portfolio</h2>
+                <h2>PORTFOLIO</h2>
             </div>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
-                <button class="filter-btn" data-filter="design">DESIGN</button>
-                <button class="filter-btn" data-filter="video">VIDEO</button>
-                <button class="filter-btn" data-filter="marketing">MARKETING</button>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="design" data-project="neon-branding">
-                    <div class="placeholder-img design-bg">NEON BRANDS</div>
-                    <div class="overlay">
-                        <h3>Cyberpunk Branding</h3>
-                        <p>Graphic Design</p>
-                        <span class="project-view-btn">SYNC INTERFACE</span>
+            <h3 class="universe-subheading">CREATIVE UNIVERSE</h3>
+            <p class="universe-tagline">All my creative works in one interactive world.</p>
+        </div>
+
+        <!-- MAIN GLOBE STAGE & PREVIEW CONTAINER -->
+        <div class="universe-stage-container">
+            <!-- Center 3D Globe Viewport -->
+            <div class="universe-globe-viewport-wrap" id="universeGlobeWrap">
+                <div class="universe-canvas-container" id="universeCanvasContainer"></div>
+
+                <!-- Globe Hover Tooltip -->
+                <div class="universe-tooltip" id="universeTooltip" aria-hidden="true">
+                    <div class="universe-tooltip-content">
+                        <div class="universe-tooltip-title" id="universeTooltipTitle">CREATIVE ITEM</div>
+                        <div class="universe-tooltip-meta" id="universeTooltipMeta">CLICK TO EXPLORE</div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="video" data-project="scifi-motion">
-                    <div class="placeholder-img video-bg">MOTION SPECTRUM</div>
-                    <div class="overlay">
-                        <h3>Sci-Fi Motion Reel</h3>
-                        <p>Video Edit</p>
-                        <span class="project-view-btn">SYNC INTERFACE</span>
+            </div>
+
+            <!-- Bottom Interaction Bar -->
+            <div class="universe-center-controls">
+                <div class="interaction-hints">
+                    <span class="hint-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="7"></rect>
+                            <line x1="12" y1="6" x2="12" y2="10"></line>
+                        </svg>
+                        <span>DRAG TO ROTATE</span>
+                    </span>
+                    <span class="hint-sep">|</span>
+                    <span class="hint-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                            </path>
+                        </svg>
+                        <span>CLICK A CELL TO EXPLORE</span>
+                    </span>
+                </div>
+
+                <div class="action-buttons">
+                    <button type="button" class="universe-btn" id="universePauseBtn"
+                        aria-label="Pause or Resume Rotation" title="Pause / Resume">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="6" y="4" width="4" height="16"></rect>
+                            <rect x="14" y="4" width="4" height="16"></rect>
+                        </svg>
+                    </button>
+                    <button type="button" class="universe-btn" id="universeResetBtn" aria-label="Reset View"
+                        title="Reset View">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                        </svg>
+                    </button>
+                    <button type="button" class="universe-btn" id="universeFullBtn" aria-label="Toggle Fullscreen"
+                        title="Toggle Fullscreen">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path
+                                d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- RIGHT DOCKED PREVIEW PANEL (Opened only on cell selection) -->
+            <div class="universe-preview-backdrop" id="universePreviewBackdrop">
+                <aside class="universe-preview-card" id="universePreviewCard">
+                    <!-- Sci-fi Corner Brackets -->
+                    <span class="preview-corner tl"></span>
+                    <span class="preview-corner tr"></span>
+                    <span class="preview-corner bl"></span>
+                    <span class="preview-corner br"></span>
+
+                    <!-- Card Top Header -->
+                    <div class="preview-card-header">
+                        <span class="preview-project-id" id="previewProjectId">CREATIVE 001</span>
+                        <button type="button" class="preview-close-btn" id="previewCloseBtn"
+                            aria-label="Close Preview Panel">&times;</button>
+                    </div>
+
+                    <!-- Preview Image Stage -->
+                    <div class="preview-media-wrap" id="previewMediaWrap">
+                        <img id="previewMediaImg" src="" alt="Selected Creative Preview" class="preview-media-img">
+                        <div class="preview-media-badge" id="previewMediaBadge">IMAGE</div>
+                        <button type="button" class="preview-expand-btn" id="previewExpandBtn" title="Open Full Viewer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Preview Details -->
+                    <div class="preview-card-body">
+                        <h3 class="preview-title" id="previewTitle">CREATIVE 001</h3>
+                        <div class="preview-meta-line" id="previewMetaLine">Filename: 1.jpg</div>
+                    </div>
+
+                    <!-- Dynamic Slide/Page Pagination Dots (for Carousels and Documents) -->
+                    <div class="preview-card-dots-row" id="previewCardDotsRow" style="display: none;">
+                        <div class="preview-card-dots" id="previewCardDots" role="tablist"
+                            aria-label="Slide Navigation"></div>
+                    </div>
+
+                    <!-- Card Navigation Footer -->
+                    <div class="preview-card-footer">
+                        <button type="button" class="preview-nav-btn prev-btn" id="previewNavPrev" aria-label="Previous"
+                            title="Previous">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <button type="button" class="preview-action-btn" id="previewOpenActionBtn">
+                            <span>VIEW FULL</span>
+                        </button>
+
+                        <button type="button" class="preview-nav-btn next-btn" id="previewNavNext" aria-label="Next"
+                            title="Next">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section id="certifications" class="certifications-section reveal-on-scroll">
+        <div class="certifications-container">
+            <div class="section-title">
+                <h2>CERTIFICATIONS &amp; ACHIEVEMENTS</h2>
+            </div>
+
+            <!-- Category Filter Buttons (Directly Below Heading & Cyan Underline) -->
+            <div class="certifications-filters" id="certificationsFilters" role="navigation"
+                aria-label="Certifications Category Filters">
+                <button type="button" class="cert-filter-btn active" data-filter="all"
+                    aria-label="Filter by All (25 credentials)">
+                    <span>ALL</span>
+                    <span class="cert-filter-count">25</span>
+                </button>
+                <button type="button" class="cert-filter-btn" data-filter="degree"
+                    aria-label="Filter by Degree (2 credentials)">
+                    <span>DEGREE</span>
+                    <span class="cert-filter-count">2</span>
+                </button>
+                <button type="button" class="cert-filter-btn" data-filter="web-dev"
+                    aria-label="Filter by Web Development (1 credentials)">
+                    <span>WEB DEVELOPMENT</span>
+                    <span class="cert-filter-count">1</span>
+                </button>
+                <button type="button" class="cert-filter-btn" data-filter="cybersecurity"
+                    aria-label="Filter by Cybersecurity (1 credentials)">
+                    <span>CYBERSECURITY</span>
+                    <span class="cert-filter-count">1</span>
+                </button>
+                <button type="button" class="cert-filter-btn" data-filter="anthropic"
+                    aria-label="Filter by Anthropic (9 credentials)">
+                    <span>ANTHROPIC</span>
+                    <span class="cert-filter-count">9</span>
+                </button>
+                <button type="button" class="cert-filter-btn" data-filter="google-cloud"
+                    aria-label="Filter by Google Cloud (12 credentials)">
+                    <span>GOOGLE CLOUD</span>
+                    <span class="cert-filter-count">12</span>
+                </button>
+            </div>
+
+            <!-- Swipeable Carousel Wrapper (Matching Client Feedback) -->
+            <div class="cert-carousel-wrapper" id="certCarousel" tabindex="0"
+                aria-label="Certifications and Achievements Carousel">
+                <!-- Navigation Arrows -->
+                <button type="button" class="cert-carousel-arrow cert-carousel-prev" id="certPrevBtn"
+                    aria-label="Previous certificates">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button type="button" class="cert-carousel-arrow cert-carousel-next" id="certNextBtn"
+                    aria-label="Next certificates">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Viewport & Track -->
+                <div class="cert-carousel-viewport" id="certViewport">
+                    <div class="cert-carousel-track" id="certificationsTrack">
+                        <!-- Dynamic certificate cards injected by certifications.js -->
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="marketing" data-project="growth-hack">
-                    <div class="placeholder-img marketing-bg">QUANTUM CAMPAIGN</div>
-                    <div class="overlay">
-                        <h3>Neon Growth Hack</h3>
-                        <p>Digital Marketing</p>
-                        <span class="project-view-btn">SYNC INTERFACE</span>
+
+                <!-- Dynamic Pagination Dots -->
+                <div class="cert-carousel-pagination" id="certPagination" role="tablist"
+                    aria-label="Certificate carousel slides"></div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal for Certificate / Badge Inspection -->
+        <div class="cert-modal-backdrop" id="certModalBackdrop" role="dialog" aria-modal="true" aria-hidden="true"
+            aria-labelledby="certModalTitle">
+            <div class="cert-modal-container">
+                <div class="cert-modal-header">
+                    <div class="cert-modal-title-wrap">
+                        <span class="cert-category-badge cert-badge-web-dev" id="certModalCategory">Credential</span>
+                        <h3 class="cert-modal-title" id="certModalTitle">Certificate Preview</h3>
+                    </div>
+                    <button type="button" class="cert-modal-close-btn" id="certModalCloseBtn"
+                        aria-label="Close certificate preview">&times;</button>
+                </div>
+                <div class="cert-modal-image-stage">
+                    <img id="certModalImage" src="" alt="Certificate Preview">
+                </div>
+                <div class="cert-modal-footer">
+                    <div class="cert-modal-details">
+                        <span class="cert-modal-detail-item">Issuer: <strong
+                                id="certModalIssuer">Organization</strong></span>
+                        <span class="cert-modal-detail-item">Date: <strong id="certModalDate">Date</strong></span>
+                    </div>
+                    <div class="cert-modal-actions">
+                        <a id="certModalVerifyLink" href="#" target="_blank" rel="noopener noreferrer"
+                            class="cert-btn cert-btn-verify">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <polyline points="9 12 11 14 15 10"></polyline>
+                            </svg>
+                            <span>Verify Credential</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- CLIENT FEEDBACK / TESTIMONIALS SECTION -->
+    <section id="feedback" class="feedback-section reveal-on-scroll">
+        <div class="feedback-ambient-glow" aria-hidden="true"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>CLIENT FEEDBACK</h2>
+                <h3 class="feedback-subheading">What People Say About My Work</h3>
+                <p class="feedback-supporting-text">Real feedback from people I've had the pleasure of working with.</p>
+            </div>
+
+            <!-- Carousel Component (8-Position Carousel) -->
+            <div class="feedback-carousel-wrapper" id="feedbackCarousel" role="region" aria-roledescription="carousel"
+                aria-label="Client Feedback">
+
+                <!-- Previous Button -->
+                <button class="carousel-arrow carousel-prev" id="feedbackPrevBtn" aria-label="Previous review"
+                    title="Previous review">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Viewport & Track -->
+                <div class="carousel-viewport" id="feedbackViewport">
+                    <div class="carousel-track" id="feedbackTrack">
+
+                        <!-- CARD 01: Nijabath Rahman (Genuine Review - Expandable) -->
+                        <article class="feedback-card" data-index="0" data-published="true">
+                            <div class="feedback-card-inner">
+                                <span class="card-corner tl" aria-hidden="true"></span>
+                                <span class="card-corner tr" aria-hidden="true"></span>
+                                <span class="card-corner bl" aria-hidden="true"></span>
+                                <span class="card-corner br" aria-hidden="true"></span>
+
+                                <div class="feedback-header">
+                                    <div class="feedback-avatar">NR</div>
+                                    <div class="feedback-author-meta">
+                                        <h4 class="feedback-name">
+                                            <a href="https://www.google.com/maps/contrib/106664449515730235394/reviews?hl=en-GB"
+                                                target="_blank" rel="noopener noreferrer" class="feedback-name-link"
+                                                title="View Google Review Profile">Nijabath Rahman</a>
+                                        </h4>
+                                        <div class="feedback-source-row">
+                                            <span class="feedback-source">
+                                                <svg class="google-icon-sm" viewBox="0 0 24 24" width="13" height="13"
+                                                    aria-hidden="true">
+                                                    <path fill="#4285F4"
+                                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                                    <path fill="#34A853"
+                                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                                    <path fill="#FBBC05"
+                                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                                    <path fill="#EA4335"
+                                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                                                </svg>
+                                                <span>Google Review</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-quote-mark" aria-hidden="true">&ldquo;</div>
+                                </div>
+
+                                <div class="feedback-rating" aria-label="5 out of 5 stars">
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-rating-score">5.0</span>
+                                </div>
+
+                                <div class="feedback-body">
+                                    <div class="feedback-text-wrapper collapsed" id="nijabathReviewWrapper">
+                                        <p class="feedback-text">&ldquo;I’m Nijabath Rahman, COO of Skill Arcadia, and
+                                            I’m delighted to recommend Ashad for his exceptional creativity, dedication,
+                                            and professionalism.<br><br>Having worked with Ashad for over a year as a
+                                            Creative Designer at Skill Arcadia, what has always stood out to me is his
+                                            ability to go beyond the brief. He doesn’t simply execute what is assigned
+                                            to him; he brings his own creative vision, suggests fresh ideas, and
+                                            consistently finds ways to make the final output even better.<br><br>What I
+                                            admire most about Ashad is his sense of ownership. He approaches every
+                                            assignment as if the success of the work were his own personal achievement.
+                                            His initiative, attention to detail, and commitment to delivering quality
+                                            make him far more than just a designer; he is someone who genuinely
+                                            contributes to the growth of the team and the brand.<br><br>It has been a
+                                            pleasure working with someone who combines creativity with such a strong
+                                            sense of responsibility. I would highly recommend Ashad to any team looking
+                                            for a creative professional who doesn’t just complete tasks but takes
+                                            ownership, adds value, and strives to make every piece of work
+                                            exceptional.&rdquo;</p>
+                                    </div>
+                                    <button type="button" class="feedback-read-more-btn" aria-expanded="false"
+                                        aria-controls="nijabathReviewWrapper">
+                                        <span class="btn-text">Read More</span>
+                                        <svg class="btn-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="feedback-card-footer">
+                                    <span class="feedback-verified-pill">
+                                        <span class="feedback-verified-dot"></span> Verified Client
+                                    </span>
+                                    <span class="feedback-system-id">REF // 01</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 02: Sali Cmd (Genuine Review - Expandable) -->
+                        <article class="feedback-card" data-index="1" data-published="true">
+                            <div class="feedback-card-inner">
+                                <span class="card-corner tl" aria-hidden="true"></span>
+                                <span class="card-corner tr" aria-hidden="true"></span>
+                                <span class="card-corner bl" aria-hidden="true"></span>
+                                <span class="card-corner br" aria-hidden="true"></span>
+
+                                <div class="feedback-header">
+                                    <div class="feedback-avatar">SC</div>
+                                    <div class="feedback-author-meta">
+                                        <h4 class="feedback-name">
+                                            <a href="https://www.google.com/maps/contrib/100132800354520087874/reviews?hl=en-GB"
+                                                target="_blank" rel="noopener noreferrer" class="feedback-name-link"
+                                                title="View Google Review Profile">Sali Cmd</a>
+                                        </h4>
+                                        <div class="feedback-source-row">
+                                            <span class="feedback-source">
+                                                <svg class="google-icon-sm" viewBox="0 0 24 24" width="13" height="13"
+                                                    aria-hidden="true">
+                                                    <path fill="#4285F4"
+                                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                                    <path fill="#34A853"
+                                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                                    <path fill="#FBBC05"
+                                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                                    <path fill="#EA4335"
+                                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                                                </svg>
+                                                <span>Google Review</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-quote-mark" aria-hidden="true">&ldquo;</div>
+                                </div>
+
+                                <div class="feedback-rating" aria-label="5 out of 5 stars">
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-rating-score">5.0</span>
+                                </div>
+
+                                <div class="feedback-body">
+                                    <div class="feedback-text-wrapper collapsed" id="saliReviewWrapper">
+                                        <p class="feedback-text">&ldquo;Working with Ashad ,my senior graphic designer
+                                            has been a great experience. He has helped me so much, shared valuable
+                                            knowledge, and guided me whenever I needed support. I’ve learned a lot from
+                                            his creativity, experience, and professionalism. He is always supportive and
+                                            encourages me to improve my design skills. I’m truly grateful for all the
+                                            help and guidance he has given me. Highly recommended for anyone looking for
+                                            creative and professional design work....&rdquo;</p>
+                                    </div>
+                                    <button type="button" class="feedback-read-more-btn" aria-expanded="false"
+                                        aria-controls="saliReviewWrapper">
+                                        <span class="btn-text">Read More</span>
+                                        <svg class="btn-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="feedback-card-footer">
+                                    <span class="feedback-verified-pill">
+                                        <span class="feedback-verified-dot"></span> Verified Client
+                                    </span>
+                                    <span class="feedback-system-id">REF // 02</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 03: Mohammed Favas VK (Genuine Review - Expandable) -->
+                        <article class="feedback-card" data-index="2" data-published="true">
+                            <div class="feedback-card-inner">
+                                <span class="card-corner tl" aria-hidden="true"></span>
+                                <span class="card-corner tr" aria-hidden="true"></span>
+                                <span class="card-corner bl" aria-hidden="true"></span>
+                                <span class="card-corner br" aria-hidden="true"></span>
+
+                                <div class="feedback-header">
+                                    <div class="feedback-avatar">MF</div>
+                                    <div class="feedback-author-meta">
+                                        <h4 class="feedback-name">
+                                            <a href="https://www.google.com/maps/contrib/110766320495810648440/reviews?hl=en-GB"
+                                                target="_blank" rel="noopener noreferrer" class="feedback-name-link"
+                                                title="View Google Review Profile">Mohammed Favas VK</a>
+                                        </h4>
+                                        <div class="feedback-source-row">
+                                            <span class="feedback-source">
+                                                <svg class="google-icon-sm" viewBox="0 0 24 24" width="13" height="13"
+                                                    aria-hidden="true">
+                                                    <path fill="#4285F4"
+                                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                                    <path fill="#34A853"
+                                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                                    <path fill="#FBBC05"
+                                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                                    <path fill="#EA4335"
+                                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                                                </svg>
+                                                <span>Google Review</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-quote-mark" aria-hidden="true">&ldquo;</div>
+                                </div>
+
+                                <div class="feedback-rating" aria-label="5 out of 5 stars">
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-rating-score">5.0</span>
+                                </div>
+
+                                <div class="feedback-body">
+                                    <div class="feedback-text-wrapper collapsed" id="favasReviewWrapper">
+                                        <p class="feedback-text">&ldquo;Amazing experience working with such a talented
+                                            and creative graphic designer! The designs are truly impressive, with great
+                                            attention to detail, creativity, and professionalism. My friend always
+                                            understands the requirements perfectly and delivers beautiful work with a
+                                            lot of dedication and passion. Highly recommended to anyone looking for
+                                            unique, high-quality, and eye-catching designs. Keep up the great work and
+                                            wishing you lots of success ahead.&rdquo;</p>
+                                    </div>
+                                    <button type="button" class="feedback-read-more-btn" aria-expanded="false"
+                                        aria-controls="favasReviewWrapper">
+                                        <span class="btn-text">Read More</span>
+                                        <svg class="btn-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="feedback-card-footer">
+                                    <span class="feedback-verified-pill">
+                                        <span class="feedback-verified-dot"></span> Verified Client
+                                    </span>
+                                    <span class="feedback-system-id">REF // 03</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 04: Shibil Ak (Genuine Review) -->
+                        <article class="feedback-card" data-index="3" data-published="true">
+                            <div class="feedback-card-inner">
+                                <span class="card-corner tl" aria-hidden="true"></span>
+                                <span class="card-corner tr" aria-hidden="true"></span>
+                                <span class="card-corner bl" aria-hidden="true"></span>
+                                <span class="card-corner br" aria-hidden="true"></span>
+
+                                <div class="feedback-header">
+                                    <div class="feedback-avatar">SA</div>
+                                    <div class="feedback-author-meta">
+                                        <h4 class="feedback-name">
+                                            <a href="https://www.google.com/maps/contrib/116688691356186532304/reviews?hl=en-GB"
+                                                target="_blank" rel="noopener noreferrer" class="feedback-name-link"
+                                                title="View Google Review Profile">Shibil Ak</a>
+                                        </h4>
+                                        <div class="feedback-source-row">
+                                            <span class="feedback-source">
+                                                <svg class="google-icon-sm" viewBox="0 0 24 24" width="13" height="13"
+                                                    aria-hidden="true">
+                                                    <path fill="#4285F4"
+                                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                                    <path fill="#34A853"
+                                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                                    <path fill="#FBBC05"
+                                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                                    <path fill="#EA4335"
+                                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                                                </svg>
+                                                <span>Google Review</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-quote-mark" aria-hidden="true">&ldquo;</div>
+                                </div>
+
+                                <div class="feedback-rating" aria-label="5 out of 5 stars">
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-rating-score">5.0</span>
+                                </div>
+
+                                <div class="feedback-body">
+                                    <p class="feedback-text">&ldquo;Creative designs and good communication. The work
+                                        was delivered professionally and on time.&rdquo;</p>
+                                </div>
+
+                                <div class="feedback-card-footer">
+                                    <span class="feedback-verified-pill">
+                                        <span class="feedback-verified-dot"></span> Verified Client
+                                    </span>
+                                    <span class="feedback-system-id">REF // 04</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 05: Abdul Hadi (Genuine Review) -->
+                        <article class="feedback-card" data-index="4" data-published="true">
+                            <div class="feedback-card-inner">
+                                <span class="card-corner tl" aria-hidden="true"></span>
+                                <span class="card-corner tr" aria-hidden="true"></span>
+                                <span class="card-corner bl" aria-hidden="true"></span>
+                                <span class="card-corner br" aria-hidden="true"></span>
+
+                                <div class="feedback-header">
+                                    <div class="feedback-avatar">AH</div>
+                                    <div class="feedback-author-meta">
+                                        <h4 class="feedback-name">
+                                            <a href="https://www.google.com/maps/contrib/112745954721194370355/reviews?hl=en-GB"
+                                                target="_blank" rel="noopener noreferrer" class="feedback-name-link"
+                                                title="View Google Review Profile">Abdul Hadi</a>
+                                        </h4>
+                                        <div class="feedback-source-row">
+                                            <span class="feedback-source">
+                                                <svg class="google-icon-sm" viewBox="0 0 24 24" width="13" height="13"
+                                                    aria-hidden="true">
+                                                    <path fill="#4285F4"
+                                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                                    <path fill="#34A853"
+                                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                                    <path fill="#FBBC05"
+                                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                                    <path fill="#EA4335"
+                                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                                                </svg>
+                                                <span>Google Review</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-quote-mark" aria-hidden="true">&ldquo;</div>
+                                </div>
+
+                                <div class="feedback-rating" aria-label="5 out of 5 stars">
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-star" aria-hidden="true">&#9733;</span>
+                                    <span class="feedback-rating-score">5.0</span>
+                                </div>
+
+                                <div class="feedback-body">
+                                    <p class="feedback-text">&ldquo;Great experience working with ASHAD. The designs
+                                        were creative, professional, and matched my requirements perfectly.&rdquo;</p>
+                                </div>
+
+                                <div class="feedback-card-footer">
+                                    <span class="feedback-verified-pill">
+                                        <span class="feedback-verified-dot"></span> Verified Client
+                                    </span>
+                                    <span class="feedback-system-id">REF // 05</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Next Button -->
+                <button class="carousel-arrow carousel-next" id="feedbackNextBtn" aria-label="Next review"
+                    title="Next review">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Pagination Dots -->
+            <div class="carousel-pagination" id="feedbackPagination" role="tablist"
+                aria-label="Testimonial navigation pagination"></div>
+
+            <!-- FEEDBACK CTA: Google Business Profile Review Destination -->
+            <div class="feedback-cta-container">
+                <div class="feedback-cta-card">
+                    <span class="card-corner tl" aria-hidden="true"></span>
+                    <span class="card-corner tr" aria-hidden="true"></span>
+                    <span class="card-corner bl" aria-hidden="true"></span>
+                    <span class="card-corner br" aria-hidden="true"></span>
+
+                    <div class="feedback-cta-content">
+                        <div class="feedback-cta-left">
+                            <div class="feedback-cta-icon-wrap" aria-hidden="true">
+                                <svg class="google-icon-cta" viewBox="0 0 24 24" width="28" height="28">
+                                    <path fill="#4285F4"
+                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                    <path fill="#34A853"
+                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                    <path fill="#FBBC05"
+                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                    <path fill="#EA4335"
+                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                                </svg>
+                            </div>
+                            <div class="feedback-cta-text">
+                                <h3 class="feedback-cta-heading">SHARE YOUR EXPERIENCE</h3>
+                                <p class="feedback-cta-desc">Have we worked together? Your feedback helps me improve and
+                                    grow.</p>
+                            </div>
+                        </div>
+                        <div class="feedback-cta-action">
+                            <a href="https://g.page/r/Cb7ytV1uIImvEAI/review" target="_blank" rel="noopener noreferrer"
+                                class="feedback-google-btn"
+                                aria-label="Leave a review on Google Business Profile (opens in new tab)">
+                                <svg class="google-icon-btn" viewBox="0 0 24 24" width="18" height="18"
+                                    aria-hidden="true">
+                                    <path fill="#4285F4"
+                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                    <path fill="#34A853"
+                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                    <path fill="#FBBC05"
+                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                    <path fill="#EA4335"
+                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                                </svg>
+                                <span class="google-btn-text">LEAVE A GOOGLE REVIEW</span>
+                                <svg class="google-btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- FAQ SECTION -->
     <section id="faq" class="reveal-on-scroll faq-section">
         <div class="container">
             <div class="section-title">
-                <span class="sub-heading">QUESTIONS / ANSWERS</span>
-                <h2>Frequently Asked Questions</h2>
+                <h2>FREQUENTLY ASKED QUESTIONS</h2>
             </div>
-            
+
             <div class="faq-accordion">
                 <div class="faq-item">
                     <button class="faq-question">
@@ -326,7 +1531,9 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>I specialize in graphic design, branding, social media creatives, video editing, UI/UX, website creation, digital marketing, AI-assisted creative development, campaign concepts and landing pages.</p>
+                        <p>I specialize in graphic design, branding, social media creatives, video editing, UI/UX,
+                            website creation, digital marketing, AI-assisted creative development, campaign concepts and
+                            landing pages.</p>
                     </div>
                 </div>
 
@@ -336,7 +1543,8 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes. I'm available for selected freelance projects, creative collaborations and digital campaigns.</p>
+                        <p>Yes. I'm available for selected freelance projects, creative collaborations and digital
+                            campaigns.</p>
                     </div>
                 </div>
 
@@ -346,7 +1554,8 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>I work with brands, businesses and organizations on visual identity, social media campaigns, advertising creatives, video content, websites and digital experiences.</p>
+                        <p>I work with brands, businesses and organizations on visual identity, social media campaigns,
+                            advertising creatives, video content, websites and digital experiences.</p>
                     </div>
                 </div>
 
@@ -356,7 +1565,8 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes. I can contribute from concept and creative strategy through design, content, video, landing pages and campaign execution.</p>
+                        <p>Yes. I can contribute from concept and creative strategy through design, content, video,
+                            landing pages and campaign execution.</p>
                     </div>
                 </div>
 
@@ -376,7 +1586,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Send me a message through the contact form or connect with me directly on WhatsApp.</p>
+                        <p>Send me an email or connect with me directly on WhatsApp.</p>
                     </div>
                 </div>
             </div>
@@ -387,134 +1597,123 @@
     <section id="contact" class="reveal-on-scroll contact-terminal-section">
         <!-- Background elements -->
         <div class="contact-bg-particles"></div>
-        
+
         <!-- HUD Details -->
         <div class="hud-detail hud-top-left">CONTACT_NODE // ONLINE</div>
         <div class="hud-detail hud-top-right">SECURE COMMUNICATION CHANNEL</div>
 
         <div class="container">
             <div class="section-title">
-                <h2>LET'S CREATE SOMETHING GREAT</h2>
+                <h2>CONTACT</h2>
+                <p class="contact-subtitle">Have an idea, campaign or project in mind? Let's turn it into something
+                    remarkable.</p>
             </div>
-            <p class="contact-subtitle">Have an idea, campaign or project in mind? Let's turn it into something remarkable.</p>
-            
+
             <div class="status-indicator centered-status">
                 <span class="status-dot"></span>
                 <span class="status-text">AVAILABLE FOR FREELANCE &amp; CREATIVE PROJECTS</span>
             </div>
-            
-            <div class="contact-grid">
-                <!-- LEFT SIDE: Terminal Panel -->
-                <div class="contact-terminal">
-                    <div class="terminal-item">
-                        <span class="terminal-label">WHATSAPP</span>
-                        <a href="https://wa.me/918590956012" target="_blank" class="terminal-value">+91 8590956012</a>
+
+            <!-- FULL-WIDTH INTERACTIVE CONTACT CARDS -->
+            <div class="contact-cards-grid">
+                <!-- Card 1: WhatsApp -->
+                <a href="https://wa.me/918590956012" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="contact-card-corner tl" aria-hidden="true"></span>
+                    <span class="contact-card-corner tr" aria-hidden="true"></span>
+                    <span class="contact-card-corner bl" aria-hidden="true"></span>
+                    <span class="contact-card-corner br" aria-hidden="true"></span>
+                    <div class="contact-card-icon-wrap whatsapp-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="contact-card-icon" aria-hidden="true">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
                     </div>
-                    <div class="terminal-divider"></div>
-                    <div class="terminal-item">
-                        <span class="terminal-label">EMAIL</span>
-                        <a href="mailto:muhammedashad2005@gmail.com" class="terminal-value">muhammedashad2005@gmail.com</a>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">WHATSAPP</span>
+                        <span class="contact-card-value">+91 85909 56012</span>
+                        <span class="contact-card-meta">Direct Chat // Online</span>
                     </div>
-                    <div class="terminal-divider"></div>
-                    <div class="terminal-item">
-                        <span class="terminal-label">LOCATION</span>
-                        <span class="terminal-value">Calicut, Kerala, India</span>
+                    <span class="contact-card-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+
+                <!-- Card 2: Email -->
+                <a href="mailto:muhammedashad2005@gmail.com" class="contact-card contact-card-email">
+                    <span class="contact-card-corner tl" aria-hidden="true"></span>
+                    <span class="contact-card-corner tr" aria-hidden="true"></span>
+                    <span class="contact-card-corner bl" aria-hidden="true"></span>
+                    <span class="contact-card-corner br" aria-hidden="true"></span>
+                    <div class="contact-card-icon-wrap email-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="contact-card-icon" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
                     </div>
-                    <div class="terminal-divider"></div>
-                    <div class="terminal-item">
-                        <span class="terminal-label">AVAILABILITY</span>
-                        <span class="terminal-value">Freelance &bull; Creative Projects &bull; Collaborations</span>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">EMAIL</span>
+                        <span class="contact-card-value">muhammedashad2005@gmail.com</span>
+                        <span class="contact-card-meta">Official Mail // Quick Reply</span>
                     </div>
-                    
-                    <a href="https://wa.me/918590956012" target="_blank" class="chat-whatsapp-btn">
-                        CHAT ON WHATSAPP &rarr;
-                        <div class="btn-sweep"></div>
-                    </a>
+                    <span class="contact-card-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+
+                <!-- Card 3: Location -->
+                <div class="contact-card contact-card-static">
+                    <span class="contact-card-corner tl" aria-hidden="true"></span>
+                    <span class="contact-card-corner tr" aria-hidden="true"></span>
+                    <span class="contact-card-corner bl" aria-hidden="true"></span>
+                    <span class="contact-card-corner br" aria-hidden="true"></span>
+                    <div class="contact-card-icon-wrap location-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="contact-card-icon" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">LOCATION</span>
+                        <span class="contact-card-value">Calicut, Kerala, India</span>
+                        <span class="contact-card-meta">Kozhikode // Remote Worldwide</span>
+                    </div>
                 </div>
 
-                <!-- RIGHT SIDE: Form -->
-                <div class="contact-form-container">
-                    <form class="contact-form terminal-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSehbzo9nsNiGKWzdLyfWVuYK6CKqKVHjtYqTSzjxw0Wvp7ifg/formResponse" method="POST" target="_self">
-                        <input type="hidden" name="fvv" value="1">
-                        <input type="hidden" name="partialResponse" value="[null,null,&quot;1732628714292782372&quot;]">
-                        <input type="hidden" name="pageHistory" value="0">
-                        <input type="hidden" name="fbzx" value="1732628714292782372">
-                        <input type="hidden" name="submissionTimestamp" value="-1">
-                        
-                        <div class="input-group">
-                            <input type="text" name="entry.1287422487" placeholder="YOUR NAME" required>
-                            <span class="input-focus-border"></span>
-                        </div>
-                        <div class="input-group">
-                            <input type="email" name="entry.1738374147" placeholder="YOUR EMAIL" required>
-                            <span class="input-focus-border"></span>
-                        </div>
-                        <div class="input-group">
-                            <select name="entry.PROJECT_SERVICE" required class="contact-dropdown">
-                                <option value="" disabled selected>PROJECT / SERVICE</option>
-                                <option value="Graphic Design">Graphic Design</option>
-                                <option value="Brand Identity">Brand Identity</option>
-                                <option value="Social Media Design">Social Media Design</option>
-                                <option value="Video Editing">Video Editing</option>
-                                <option value="UI/UX Design">UI/UX Design</option>
-                                <option value="Website / Landing Page">Website / Landing Page</option>
-                                <option value="Digital Marketing">Digital Marketing</option>
-                                <option value="Campaign / Creative">Campaign / Creative</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <span class="input-focus-border"></span>
-                        </div>
-                        <div class="input-group">
-                            <textarea name="entry.785803051" placeholder="YOUR MESSAGE" required></textarea>
-                            <span class="input-focus-border"></span>
-                        </div>
-                        
-                        <button type="submit" class="cta-btn terminal-btn">
-                            <span class="btn-text">SEND MESSAGE &rarr;</span>
-                            <div class="btn-sweep"></div>
-                        </button>
-                        <div class="form-status" id="formStatus"></div>
-                    </form>
-                </div>
+                <!-- Card 4: Pinterest -->
+                <a href="https://in.pinterest.com/muhammedashad2005/" target="_blank" rel="noopener noreferrer"
+                    class="contact-card">
+                    <span class="contact-card-corner tl" aria-hidden="true"></span>
+                    <span class="contact-card-corner tr" aria-hidden="true"></span>
+                    <span class="contact-card-corner bl" aria-hidden="true"></span>
+                    <span class="contact-card-corner br" aria-hidden="true"></span>
+                    <div class="contact-card-icon-wrap pinterest-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="contact-card-icon" aria-hidden="true">
+                            <path
+                                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.182 0 7.433 2.981 7.433 6.953 0 4.156-2.615 7.502-6.242 7.502-1.222 0-2.373-.635-2.766-1.385l-.752 2.873c-.272 1.04-1.01 2.34-1.503 3.134 1.18.362 2.438.558 3.738.558 6.621 0 11.988-5.368 11.988-11.988 0-6.62-5.367-11.987-11.987-11.987z" />
+                        </svg>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">PINTEREST</span>
+                        <span class="contact-card-value">muhammedashad2005</span>
+                        <span class="contact-card-meta">My Creative Works // Pinterest</span>
+                    </div>
+                    <span class="contact-card-arrow" aria-hidden="true">&rarr;</span>
+                </a>
             </div>
 
-            <!-- SOCIAL CONNECTIONS -->
-            <div class="social-connections">
-                <h5 class="social-title">CONNECT WITH ME</h5>
-                <p class="social-subtitle">Follow my creative work and projects.</p>
-                <div class="social-icons-row">
-                    <!-- WhatsApp -->
-                    <a href="https://wa.me/918590956012" target="_blank" class="social-icon" aria-label="WhatsApp">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        <span class="social-hover-ring"></span>
-                    </a>
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/as.hxd/" target="_blank" class="social-icon" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        <span class="social-hover-ring"></span>
-                    </a>
-                    <!-- Pinterest -->
-                    <a href="https://in.pinterest.com/muhammedashad2005/" target="_blank" class="social-icon" aria-label="Pinterest">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.182 0 7.433 2.981 7.433 6.953 0 4.156-2.615 7.502-6.242 7.502-1.222 0-2.373-.635-2.766-1.385l-.752 2.873c-.272 1.04-1.01 2.34-1.503 3.134 1.18.362 2.438.558 3.738.558 6.621 0 11.988-5.368 11.988-11.988 0-6.62-5.367-11.987-11.987-11.987z"/></svg>
-                        <span class="social-hover-ring"></span>
-                    </a>
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/muhammed-ashad-79a329388/" target="_blank" class="social-icon" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        <span class="social-hover-ring"></span>
-                    </a>
-                    <!-- Behance -->
-                    <a href="https://www.behance.net/muhammedashad" target="_blank" class="social-icon" aria-label="Behance">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10.636c0-4.44-3.441-7.392-7.726-7.392-4.284 0-7.726 3.442-7.726 7.726 0 4.284 3.442 7.726 7.726 7.726 3.998 0 7.392-2.616 7.726-6.438h-3.642c-.2 1.34-1.34 2.456-4.084 2.456-2.744 0-3.998-1.562-3.998-3.794H23.726c0-.28 0-1.004 0-1.284v1.004zm-11.452-1.784c.112-1.9 1.452-3.24 3.726-3.24 2.274 0 3.614 1.34 3.726 3.24h-7.452zm-12.274-12.852h6.126c2.796 0 4.646.994 4.646 3.518 0 1.73-1.042 2.87-2.628 3.328 1.956.446 3.128 1.83 3.128 3.824 0 2.766-2.066 3.968-4.912 3.968h-6.36v-14.638zm3.268 5.752h2.512c1.452 0 2.29-.614 2.29-1.954 0-1.452-1.004-1.9-2.29-1.9h-2.512v3.854zm0 6.14h2.792c1.786 0 2.512-.782 2.512-2.122 0-1.452-.892-2.12-2.512-2.12h-2.792v4.242z"/></svg>
-                        <span class="social-hover-ring"></span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- FINAL CTA -->
-            <div class="final-cta">
-                <p class="final-cta-subtitle">READY TO CREATE?</p>
-                <h3 class="final-cta-title">LET'S BUILD SOMETHING THAT STANDS OUT. <span class="arrow">&rarr;</span></h3>
+            <!-- PRIMARY WHATSAPP CTA -->
+            <div class="contact-cta-wrapper">
+                <a href="https://wa.me/918590956012" target="_blank" rel="noopener noreferrer"
+                    class="chat-whatsapp-btn contact-primary-cta">
+                    <span class="cta-inner">
+                        <svg class="whatsapp-cta-svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"
+                            aria-hidden="true">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span>START CONVERSATION ON WHATSAPP &rarr;</span>
+                    </span>
+                    <div class="btn-sweep"></div>
+                </a>
             </div>
         </div>
     </section>
@@ -539,13 +1738,185 @@
         </div>
     </div>
 
-    <footer class="terminal-footer">
-        <div class="footer-divider"></div>
-        <p>&copy; 2026 Ashad Creative. All Rights Reserved.</p>
-        <p class="powered-by">POWERED BY <span>MUHAMMED ASHAD K</span></p>
+    <!-- PREMIUM CYBER FOOTER -->
+    <footer class="cyber-footer">
+        <div class="footer-divider" aria-hidden="true"></div>
+        <div class="container footer-container">
+            <!-- LEFT SIDE: Brand & Identity -->
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">ASHAD</div>
+                <p class="footer-role">Graphic Designer &amp; Digital Marketer</p>
+                <p class="footer-location">
+                    <span class="footer-loc-icon" aria-hidden="true">◈</span> Calicut, Kerala, India.
+                </p>
+            </div>
+
+            <!-- CENTER: Quick Navigation -->
+            <div class="footer-col footer-nav">
+                <span class="footer-col-title">// QUICK NAVIGATION</span>
+                <div class="footer-nav-grid" role="navigation" aria-label="Footer Quick Navigation">
+                    <a href="#hero" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> Home
+                    </a>
+                    <a href="#about" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> About
+                    </a>
+                    <a href="#experience" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> Experience
+                    </a>
+                    <a href="#skills" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> Skills
+                    </a>
+                    <a href="#portfolio" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> Portfolio
+                    </a>
+                    <a href="#certifications" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> Certifications
+                    </a>
+                    <a href="#feedback" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> Client Feedback
+                    </a>
+                    <a href="#faq" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> FAQ
+                    </a>
+                    <a href="#contact" class="footer-nav-item">
+                        <span class="nav-bullet" aria-hidden="true">◈</span> Contact
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: Connect -->
+            <div class="footer-col footer-connect">
+                <span class="footer-col-title">// CONNECT</span>
+                <div class="footer-social-icons">
+                    <a href="https://wa.me/918590956012" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link" aria-label="WhatsApp" title="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/as.hxd/" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link" aria-label="Instagram" title="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <a href="https://in.pinterest.com/muhammedashad2005/" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link" aria-label="Pinterest" title="Pinterest">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.182 0 7.433 2.981 7.433 6.953 0 4.156-2.615 7.502-6.242 7.502-1.222 0-2.373-.635-2.766-1.385l-.752 2.873c-.272 1.04-1.01 2.34-1.503 3.134 1.18.362 2.438.558 3.738.558 6.621 0 11.988-5.368 11.988-11.988 0-6.62-5.367-11.987-11.987-11.987z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammed-ashad-79a329388/" target="_blank"
+                        rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.behance.net/muhammedashad" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link" aria-label="Behance" title="Behance">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M22 7h-7v-2h7v2zm1.726 10.636c0-4.44-3.441-7.392-7.726-7.392-4.284 0-7.726 3.442-7.726 7.726 0 4.284 3.442 7.726 7.726 7.726 3.998 0 7.392-2.616 7.726-6.438h-3.642c-.2 1.34-1.34 2.456-4.084 2.456-2.744 0-3.998-1.562-3.998-3.794H23.726c0-.28 0-1.004 0-1.284v1.004zm-11.452-1.784c.112-1.9 1.452-3.24 3.726-3.24 2.274 0 3.614 1.34 3.726 3.24h-7.452zm-12.274-12.852h6.126c2.796 0 4.646.994 4.646 3.518 0 1.73-1.042 2.87-2.628 3.328 1.956.446 3.128 1.83 3.128 3.824 0 2.766-2.066 3.968-4.912 3.968h-6.36v-14.638zm3.268 5.752h2.512c1.452 0 2.29-.614 2.29-1.954 0-1.452-1.004-1.9-2.29-1.9h-2.512v3.854zm0 6.14h2.792c1.786 0 2.512-.782 2.512-2.122 0-1.452-.892-2.12-2.512-2.12h-2.792v4.242z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/muhammedashad" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link" aria-label="GitHub" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM COPYRIGHT -->
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-container">
+                <p class="footer-copyright">&copy; 2026 Muhammed Ashad K. All Rights Reserved.</p>
+                <p class="footer-credit">Designed &amp; Developed by <span>Muhammed Ashad K</span></p>
+            </div>
+        </div>
     </footer>
 
-    <script src="main.js"></script>
+    <!-- Full-Screen Blurred Cyber Navigation Overlay (Mobile Only) -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-modal="true" role="dialog" aria-label="Navigation Menu">
+        <!-- Ambient Cyber Glows (Layered behind menu text) -->
+        <div class="menu-ambient-glow glow-cyan" aria-hidden="true"></div>
+        <div class="menu-ambient-glow glow-purple" aria-hidden="true"></div>
+
+        <div class="mobile-nav-panel">
+            <div class="mobile-nav-top">
+                <span class="mobile-nav-sys-tag">SYS // NAV_PANEL</span>
+                <button class="mobile-nav-close-btn" id="mobileNavClose"
+                    aria-label="Close navigation menu">&times;</button>
+            </div>
+
+            <!-- Numbered Navigation Links: 01 — HOME to 06 — CONTACT -->
+            <ul class="mobile-nav-items">
+                <li style="--item-index: 1"><a href="#hero" class="mobile-nav-link"><span class="nav-label">HOME</span></a></li>
+                <li style="--item-index: 2"><a href="#about" class="mobile-nav-link"><span class="nav-label">ABOUT</span></a></li>
+                <li style="--item-index: 3"><a href="#experience" class="mobile-nav-link"><span class="nav-label">EXPERIENCE</span></a></li>
+                <li style="--item-index: 4"><a href="#skills" class="mobile-nav-link"><span class="nav-label">SKILLS</span></a></li>
+                <li style="--item-index: 5"><a href="#portfolio" class="mobile-nav-link"><span class="nav-label">PORTFOLIO</span></a></li>
+                <li style="--item-index: 6"><a href="#certifications" class="mobile-nav-link"><span class="nav-label">CERTIFICATIONS</span></a></li>
+                <li style="--item-index: 7"><a href="#feedback" class="mobile-nav-link"><span class="nav-label">CLIENT FEEDBACK</span></a></li>
+                <li style="--item-index: 8"><a href="#faq" class="mobile-nav-link"><span class="nav-label">FAQ</span></a></li>
+                <li style="--item-index: 9"><a href="#contact" class="mobile-nav-link"><span class="nav-label">CONTACT</span></a></li>
+            </ul>
+
+            <div class="mobile-nav-footer">
+                <div class="mobile-nav-status">
+                    <span class="hud-blink">●</span> AVAILABLE FOR FREELANCE
+                </div>
+                <div class="mobile-nav-loc">CALICUT, KERALA, INDIA</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js?v=5.2"></script>
+    <script src="js/feedback.js?v=3.1"></script>
+    <script src="js/certifications.js?v=3.1"></script>
+
+    <!-- 3D Creative Universe Engines & Controllers -->
+    <script src="vendor/three.min.js"></script>
+    <script src="js/projects-data.js?v=2.2"></script>
+    <script src="js/project-viewer.js?v=2.2"></script>
+    <script src="js/globe.js?v=2.2"></script>
+    <script>
+        // Initialize 3D Creative Universe
+        function startUniverse() {
+            if (window.ashadGlobe) return;
+            if (window.CreativeUniverseGlobe && window.ProjectViewer && window.ASHAD_WORKS_DATA) {
+                const viewer = new ProjectViewer({
+                    manifest: window.ASHAD_WORKS_DATA,
+                    onClose: (lastSlideIndex) => {
+                        if (window.ashadGlobe) {
+                            window.ashadGlobe.isAutoRotating = true;
+                            if (typeof lastSlideIndex === 'number' && window.ashadGlobe.selectedProject) {
+                                window.ashadGlobe.setPreviewSlide(lastSlideIndex);
+                            }
+                        }
+                    }
+                });
+                window.ashadViewer = viewer;
+                window.ashadGlobe = new CreativeUniverseGlobe('universeCanvasContainer', {
+                    data: window.ASHAD_WORKS_DATA,
+                    viewer: viewer
+                });
+            }
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', startUniverse);
+        } else {
+            startUniverse();
+        }
+    </script>
 </body>
 
 </html>

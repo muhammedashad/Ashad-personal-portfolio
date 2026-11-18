@@ -1,0 +1,19 @@
+{
+  "name": "Muhammed Ashad K | Creative Professional",
+  "short_name": "ASHAD",
+  "icons": [
+    {
+      "src": "favicon-192.png?v=1.0",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-512.png?v=1.0",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#00E5FF",
+  "background_color": "#08090D",
+  "display": "standalone"
+}

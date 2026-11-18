@@ -27,6 +27,8 @@ const MIME_TYPES = {
     '.webp': 'image/webp',
     '.gif': 'image/gif',
     '.svg': 'image/svg+xml',
+    '.ico': 'image/x-icon',
+    '.webmanifest': 'application/manifest+json',
     '.pdf': 'application/pdf',
     '.woff': 'font/woff',
     '.woff2': 'font/woff2',

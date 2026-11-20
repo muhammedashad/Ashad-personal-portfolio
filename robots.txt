@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://muhammedashad.com/sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+Sitemap: https://www.muhammedashad.com/sitemap.xml

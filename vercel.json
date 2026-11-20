@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.muhammedashad.com"
+        }
+      ],
+      "destination": "https://muhammedashad.com/:path*",
+      "permanent": true
+    }
+  ]
+}

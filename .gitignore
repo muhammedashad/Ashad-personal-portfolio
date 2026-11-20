@@ -8,3 +8,5 @@ dist/
 github_config.py
 upload_to_github.py
 today_cyber_backup_20261028/
+
+github_config.json
